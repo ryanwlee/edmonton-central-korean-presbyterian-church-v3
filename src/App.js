@@ -9,6 +9,7 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import Hero from './Hero';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
@@ -69,6 +70,7 @@ function App(props) {
           {drawer}
         </Drawer>
       </nav>
+      <Hero />
       <Outlet />
       <Footer />
     </div>

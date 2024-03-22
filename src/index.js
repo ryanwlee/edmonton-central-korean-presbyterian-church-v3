@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import GlobalFonts from './styles';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home/Home';
+import Intro from './Intro/Intro';
+import Container from './Container';
+import Service from './Service/Service';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: <Container component={<Home />} />,
+      },
+      {
+        path: '/intro',
+        element: <Container component={<Intro />} />,
+      },
+      {
+        path: '/service',
+        element: <Container component={<Service />} />,
       },
     ],
   },

@@ -1,7 +1,7 @@
 export const container = {
   backgroundColor: '#F5F6F6',
-  paddingLeft: '100px',
-  paddingRight: '100px',
+  paddingLeft: '10%',
+  paddingRight: '10%',
   paddingTop: '120px',
   paddingBottom: '120px',
   display: 'flex',
@@ -10,12 +10,12 @@ export const container = {
 };
 
 export const leftArrowButtonCss = {
-  height: '25px',
+  height: '50px',
   marginRight: 'auto',
 };
 
 export const rightArrowButtonCss = {
-  height: '25px',
+  height: '50px',
   marginLeft: 'auto',
 };
 

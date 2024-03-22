@@ -6,7 +6,6 @@ export const container = {
   width: '100%',
   alignItems: 'center',
   justifyContent: 'center',
-  marginTop: '100px',
 };
 
 export const logoContainer = {

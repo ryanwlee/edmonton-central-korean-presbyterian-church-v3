@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from './images/logo.png';
+import { Link } from 'react-router-dom';
 
 import {
   navBarCss,
@@ -19,15 +20,17 @@ function NavBar({ handleDrawerToggle }) {
   return (
     <AppBar position='static'>
       <Toolbar sx={navBarCss}>
-        <img src={logo} alt='Logo' style={logoCss} />
+        <Link to={'/'}>
+          <img src={logo} alt='Logo' style={logoCss} />
+        </Link>
         <div style={navItemsCss}>
-          <Typography variant='h6' component='div' style={navItemCss}>
+          <Link to={'intro'} style={navItemCss}>
             소개
-          </Typography>
+          </Link>
           <Divider />
-          <Typography variant='h6' component='div' style={navItemCss}>
+          <Link to={'service'} style={navItemCss}>
             예배
-          </Typography>
+          </Link>
           <Divider />
           <Typography variant='h6' component='div' style={navItemCss}>
             소식

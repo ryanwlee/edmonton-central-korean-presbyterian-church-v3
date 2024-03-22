@@ -28,6 +28,8 @@ export const navItemCss = {
   justifyContent: 'center',
   flexDirection: 'column',
   fontFamily: 'KoPubWorld Dotum Bold',
+  color: '#FFFFFF',
+  textDecoration: 'none',
 };
 
 export const dividerCss = {

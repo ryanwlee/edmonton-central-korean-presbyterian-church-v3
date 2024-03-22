@@ -1,17 +1,15 @@
-import Hero from './Hero';
 import Explorer from './Explorer';
 import MonthVerse from './MonthVerse';
 import Direction from './Direction';
-import { container } from './HomeCss';
+import { Wrapper } from '../Style';
 
 function Home() {
   return (
-    <div style={container}>
-      <Hero />
+    <Wrapper>
       <Explorer />
       <MonthVerse />
       <Direction />
-    </div>
+    </Wrapper>
   );
 }
 

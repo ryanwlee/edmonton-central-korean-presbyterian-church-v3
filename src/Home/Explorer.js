@@ -1,15 +1,5 @@
 import Grid from '@mui/material/Unstable_Grid2';
-import {
-  container,
-  labelContainer,
-  labelButtonContainer,
-  labelButtonCss,
-  label,
-  imageCss,
-  imageContainer,
-  imageLabel,
-  imageList,
-} from './ExplorerCss';
+import { Container, Label, FlexRow } from '../Style';
 
 import worship from '../images/worship.png';
 import announce from '../images/announce.png';
@@ -19,6 +9,33 @@ import arrowLeft from '../images/arrowLeft.png';
 import arrowRight from '../images/arrowRight.png';
 
 import Styled from 'styled-components';
+
+const labelButtonCss = {
+  width: '25px',
+  cursor: 'pointer',
+};
+
+export const imageContainer = {
+  margin: 'auto',
+  width: 'fit-content',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
+export const imageCss = {
+  width: '80px',
+};
+
+export const imageLabel = {
+  color: '#000000',
+  fontSize: '18px',
+  marginTop: '80px',
+  fontWeight: '600',
+  fontFamily: 'KoPubWorld Dotum Bold',
+  textAlign: 'center',
+};
 
 function Explorer() {
   const list = [
@@ -40,7 +57,7 @@ function Explorer() {
   const getCards = () => {
     return list.map((l) => {
       return (
-        <Grid xs={6} md={3} style={imageList}>
+        <Grid xs={6} md={3} style={FlexRow}>
           <Card>
             <div style={imageContainer}>
               <img src={l.imgSrc} alt={l.imgAlt} style={imageCss} />
@@ -53,10 +70,10 @@ function Explorer() {
   };
 
   return (
-    <div style={container}>
-      <div style={labelContainer}>
-        <div style={label}>Explore</div>
-        <div style={labelButtonContainer}>
+    <div style={Container}>
+      <div style={{ ...FlexRow, marginBottom: '25px' }}>
+        <div style={Label}>Explore</div>
+        <div style={{ ...FlexRow, gap: '5px', marginLeft: 'auto' }}>
           <img src={arrowLeft} alt={'ArrowLeft'} style={labelButtonCss} />
           <img src={arrowRight} alt={'ArrowRight'} style={labelButtonCss} />
         </div>

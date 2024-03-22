@@ -1,6 +1,7 @@
 export const container = {
   display: 'flex',
   flexDirection: 'column',
+  paddingBottom: '150px',
 };
 
 export const labelCss = {
