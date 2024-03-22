@@ -3,12 +3,7 @@ import Title from './Title';
 import Pastor from './Pastor';
 import Pastors from './Pastors';
 import Church from './Church';
-
-const Wrapper = Styled.div`
-  display: flex;
-  gap: 150px;
-  flex-direction: column;
-`;
+import { Wrapper } from '../Style';
 
 function Intro() {
   return (

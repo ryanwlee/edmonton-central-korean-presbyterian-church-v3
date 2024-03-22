@@ -6,14 +6,50 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logo from './images/logo.png';
 import { Link } from 'react-router-dom';
 
-import {
-  navBarCss,
-  logoCss,
-  navItemsCss,
-  navItemCss,
-  dividerCss,
-  buttonCss,
-} from './NavBarCss';
+const navBarCss = {
+  display: 'flex',
+  height: '60px',
+  backgroundColor: '#353535',
+  color: '#FFFFFF',
+};
+
+const logoCss = {
+  maxWidth: '344px',
+  height: '40px',
+};
+
+const navItemsCss = {
+  display: 'flex',
+  flexDirection: 'row',
+  flexGrow: '1',
+  justifyContent: 'flex-end',
+};
+
+const navItemCss = {
+  width: '15%',
+  maxWidth: '198px',
+  minWidth: '100px',
+  textAlign: 'center',
+  fontSize: '15px',
+  fontWeight: '600',
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection: 'column',
+  fontFamily: 'KoPubWorld Dotum Bold',
+  color: '#FFFFFF',
+  textDecoration: 'none',
+};
+
+const dividerCss = {
+  borderRight: '2px solid rgba(255, 255, 255, 0.2)',
+  height: '20px',
+  marginTop: 'auto',
+  marginBottom: 'auto',
+};
+
+const buttonCss = {
+  width: '100px',
+};
 
 function NavBar({ handleDrawerToggle }) {
   const Divider = () => <div style={dividerCss}></div>;

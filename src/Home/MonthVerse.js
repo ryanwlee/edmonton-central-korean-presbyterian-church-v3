@@ -1,16 +1,25 @@
-import {
-  container,
-  leftArrowButtonCss,
-  rightArrowButtonCss,
-  verseContainer,
-  labelCss,
-  verseCss,
-  verseInfoCss,
-  doublequotecss,
-} from './MonthVerseCss';
 import LeftArrow from '../images/LeftArrow.png';
 import RightArrow from '../images/RightArrow.png';
 import doublequote from '../images/doublequote.png';
+import {
+  Container,
+  GREY_BG_COLOR,
+  LeftArrowButtonCss,
+  RightArrowButtonCss,
+  Label,
+  Content,
+} from '../Style';
+
+const doublequotecss = {
+  position: 'relative',
+  top: '-250px',
+  width: '40px',
+  left: '10%',
+};
+
+const verseContainer = {
+  textAlign: 'center',
+};
 
 function MonthVerse() {
   const list = [
@@ -26,19 +35,27 @@ function MonthVerse() {
     return list.map((l) => {
       return (
         <div>
-          <div style={labelCss}>{l.label}</div>
-          <pre style={verseCss}>{l.verse}</pre>
-          <div style={verseInfoCss}>{l.verseInfo}</div>
+          <div style={Label}>{l.label}</div>
+          <pre style={{ ...Content, marginTop: '30px' }}>{l.verse}</pre>
+          <div style={{ ...Content, marginTop: '30px' }}>{l.verseInfo}</div>
         </div>
       );
     });
   };
   return (
-    <div style={container}>
+    <div
+      style={{
+        ...Container,
+        backgroundColor: GREY_BG_COLOR,
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+      }}
+    >
       <img src={doublequote} alt={'DoubleQuote'} style={doublequotecss} />
-      <img src={RightArrow} alt={'RightArrow'} style={leftArrowButtonCss} />
+      <img src={RightArrow} alt={'RightArrow'} style={LeftArrowButtonCss} />
       <div style={verseContainer}>{getList()}</div>
-      <img src={LeftArrow} alt={'LeftArrow'} style={rightArrowButtonCss} />
+      <img src={LeftArrow} alt={'LeftArrow'} style={RightArrowButtonCss} />
     </div>
   );
 }

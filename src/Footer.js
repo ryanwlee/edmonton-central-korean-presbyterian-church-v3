@@ -1,15 +1,3 @@
-import {
-  container,
-  logoContainer,
-  logoCss,
-  lineHeader,
-  lineContainer,
-  lineIconCss,
-  lineTextCss,
-  reserve,
-  snsContainer,
-  snsImage,
-} from './FooterCss';
 import logo from './images/logo.png';
 import Pin from './images/footerPin.png';
 import Call from './images/call.png';
@@ -18,12 +6,81 @@ import Youtube from './images/youtube.png';
 import Facebook from './images/facebook.png';
 import Insta from './images/insta.png';
 import Gracechurch from './images/gracechurch.png';
+import { FlexColumn } from './Style';
+
+const Container = {
+  ...FlexColumn,
+  backgroundColor: '#242424',
+  height: '450px',
+  width: '100%',
+  alignItems: 'center',
+  justifyContent: 'center',
+};
+
+const LogoContainer = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  marginBottom: '40px',
+};
+
+const LogoCss = { width: 'auto', height: '40px' };
+
+const lineContainer = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '10px',
+};
+
+const lineIconCss = {
+  width: '15px',
+};
+
+const lineTextCss = {
+  color: '#FFFFFF',
+  fontSize: '15px',
+  fontWeight: '300',
+  fontFamily: 'KoPubWorld Dotum Bold',
+  textAlign: 'center',
+  opacity: '60%',
+};
+
+const lineHeader = {
+  color: '#5DB683',
+  fontSize: '22px',
+  fontWeight: '300',
+  fontFamily: 'KoPubWorld Dotum Bold',
+  textAlign: 'center',
+  marginBottom: '10px',
+};
+
+const reserve = {
+  color: '#FFFFFF',
+  fontSize: '10px',
+  fontWeight: '300',
+  fontFamily: 'KoPubWorld Dotum Bold',
+  textAlign: 'center',
+  marginBottom: '5px',
+  opacity: '60%',
+};
+
+const snsContainer = {
+  marginTop: '30px',
+  marginBottom: '30px',
+  display: 'flex',
+  gap: '10px',
+};
+
+const snsImage = {
+  width: '30px',
+};
 
 function Footer() {
   return (
-    <div style={container}>
-      <div style={logoContainer}>
-        <img src={logo} alt='Logo' style={logoCss} />
+    <div style={Container}>
+      <div style={LogoContainer}>
+        <img src={logo} alt='Logo' style={LogoCss} />
       </div>
       <div style={lineHeader}>CONTACT</div>
       <div style={lineContainer}>

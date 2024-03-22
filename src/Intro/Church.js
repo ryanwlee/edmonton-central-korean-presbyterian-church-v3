@@ -1,40 +1,14 @@
 import firstFloor from '../images/1stFloor.png';
 import LeftArrow from '../images/LeftArrow.png';
 import RightArrow from '../images/RightArrow.png';
-
-const container = {
-  backgroundColor: '#F5F6F6',
-  paddingLeft: '10%',
-  paddingRight: '10%',
-  paddingTop: '120px',
-  paddingBottom: '120px',
-  display: 'flex',
-  flexDirection: 'column',
-};
-
-export const title = {
-  color: '#353535',
-  fontSize: '22px',
-  fontWeight: '500',
-  fontFamily: 'establishRetrosansOTF',
-  textAlign: 'center',
-};
-
-const mapContainer = {
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-};
-
-const leftArrowButtonCss = {
-  height: '50px',
-  marginRight: 'auto',
-};
-
-const rightArrowButtonCss = {
-  height: '50px',
-  marginLeft: 'auto',
-};
+import {
+  Container,
+  FlexColumn,
+  FlexRow,
+  Label,
+  LeftArrowButtonCss,
+  RightArrowButtonCss,
+} from '../Style';
 
 const imgContainer = {
   textAlign: 'center',
@@ -49,12 +23,12 @@ function Church() {
     });
   };
   return (
-    <div style={container}>
-      <div style={title}>교역자 소개</div>
-      <div style={mapContainer}>
-        <img src={RightArrow} alt={'RightArrow'} style={leftArrowButtonCss} />
+    <div style={{ ...Container, ...FlexColumn, backgroundColor: '#F5F6F6' }}>
+      <div style={{ ...Label, textAlign: 'center' }}>교역자 소개</div>
+      <div style={{ ...FlexRow, alignItems: 'center' }}>
+        <img src={RightArrow} alt={'RightArrow'} style={LeftArrowButtonCss} />
         <div style={imgContainer}>{getList()}</div>
-        <img src={LeftArrow} alt={'LeftArrow'} style={rightArrowButtonCss} />
+        <img src={LeftArrow} alt={'LeftArrow'} style={RightArrowButtonCss} />
       </div>
     </div>
   );
