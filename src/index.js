@@ -9,6 +9,7 @@ import Home from './Home/Home';
 import Intro from './Intro/Intro';
 import Container from './Container';
 import Service from './Service/Service';
+import Announcement from './Announcement/Announcement';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/service',
         element: <Container component={<Service />} />,
+      },
+      {
+        path: '/announcement',
+        element: <Container component={<Announcement />} />,
       },
     ],
   },

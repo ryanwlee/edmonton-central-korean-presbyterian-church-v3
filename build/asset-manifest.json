@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.38a684a5.js",
+    "static/js/453.ef46d8a4.chunk.js": "/static/js/453.ef46d8a4.chunk.js",
+    "static/media/KoPubWorldDotumMedium.ttf": "/static/media/KoPubWorldDotumMedium.d4663cd37ec26b26240e.ttf",
+    "static/media/KoPubWorldDotumBold.ttf": "/static/media/KoPubWorldDotumBold.7204e975c22b973d429c.ttf",
+    "static/media/KoPubWorldDotumLight.woff": "/static/media/KoPubWorldDotumLight.b1a300b7894f98fd1563.woff",
+    "static/media/hero.png": "/static/media/hero.404c6db9af45d40e3bc6.png",
+    "static/media/establishRetrosansOTF.woff": "/static/media/establishRetrosansOTF.f10cb846addce61f6313.woff",
+    "static/media/dummy1.png": "/static/media/dummy1.6fa8ef6b57e364ece0db.png",
+    "static/media/1stFloor.png": "/static/media/1stFloor.99c7c8714bf6363ff059.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.38a684a5.js.map": "/static/js/main.38a684a5.js.map",
+    "453.ef46d8a4.chunk.js.map": "/static/js/453.ef46d8a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.38a684a5.js"
+  ]
+}

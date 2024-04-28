@@ -1,5 +1,23 @@
 import Styled from 'styled-components';
 
+const size = {
+  xs: '400px', // for small screen mobile
+  sm: '600px', // for mobile screen
+  md: '900px', // for tablets
+  lg: '1280px', // for laptops
+  xl: '1440px', // for desktop / monitors
+  xxl: '1920px', // for big screens
+};
+
+export const device = {
+  xs: `(max-width: ${size.xs})`,
+  sm: `(max-width: ${size.sm})`,
+  md: `(max-width: ${size.md})`,
+  lg: `(max-width: ${size.lg})`,
+  xl: `(max-width: ${size.xl})`,
+  xxl: `(max-width: ${size.xxl})`,
+};
+
 export const GREY_BG_COLOR = '#F5F6F6';
 
 export const Wrapper = Styled.div`
@@ -55,12 +73,16 @@ export const ContentBoldGreen = {
   textAlign: 'center',
 };
 
-export const Container = {
-  paddingLeft: '80px',
-  paddingRight: '80px',
-  paddingTop: '150px',
-  paddingBottom: '150px',
-};
+export const Container = Styled.div`
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @media ${device.lg} {
+    text-align: center;
+  }
+`;
 
 export const FlexRow = {
   display: 'flex',

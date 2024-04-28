@@ -7,6 +7,7 @@ import Facebook from './images/facebook.png';
 import Insta from './images/insta.png';
 import Gracechurch from './images/gracechurch.png';
 import { FlexColumn } from './Style';
+import { Link } from 'react-router-dom';
 
 const Container = {
   ...FlexColumn,
@@ -96,10 +97,16 @@ function Footer() {
         <div style={lineTextCss}>eckpc1988@gmail.com</div>
       </div>
       <div style={snsContainer}>
-        <img src={Youtube} alt={'Youtube'} style={snsImage} />
-        <img src={Facebook} alt={'Facebook'} style={snsImage} />
-        <img src={Insta} alt={'Insta'} style={snsImage} />
-        <img src={Gracechurch} alt={'Gracechurch'} style={snsImage} />
+        <Link
+          to={'https://www.youtube.com/channel/UCzz-Hi9PzGYiQE0zEOn8idg/live'}
+        >
+          <img src={Youtube} alt={'Youtube'} style={snsImage} />
+        </Link>
+        {/* <img src={Facebook} alt={'Facebook'} style={snsImage} />
+        <img src={Insta} alt={'Insta'} style={snsImage} /> */}
+        <Link to={'https://www.grace-central.com/'}>
+          <img src={Gracechurch} alt={'Gracechurch'} style={snsImage} />
+        </Link>
       </div>
       <div style={reserve}>
         © 2023 Edmonton Central Korean Presbyterian Church. All Rights Reserved

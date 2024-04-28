@@ -15,7 +15,7 @@ const labelButtonCss = {
   cursor: 'pointer',
 };
 
-export const imageContainer = {
+const imageContainer = {
   margin: 'auto',
   width: 'fit-content',
   display: 'flex',
@@ -24,11 +24,11 @@ export const imageContainer = {
   alignItems: 'center',
 };
 
-export const imageCss = {
+const imageCss = {
   width: '80px',
 };
 
-export const imageLabel = {
+const imageLabel = {
   color: '#000000',
   fontSize: '18px',
   marginTop: '80px',
@@ -36,6 +36,11 @@ export const imageLabel = {
   fontFamily: 'KoPubWorld Dotum Bold',
   textAlign: 'center',
 };
+
+const ExplorerContainer = Styled(Container)`
+  padding-top: 0;
+  padding-bottom: 50px;
+`;
 
 function Explorer() {
   const list = [
@@ -70,8 +75,8 @@ function Explorer() {
   };
 
   return (
-    <div style={Container}>
-      <div style={{ ...FlexRow, marginBottom: '25px' }}>
+    <ExplorerContainer>
+      {/* <div style={{ ...FlexRow, marginBottom: '25px' }}>
         <div style={Label}>Explore</div>
         <div style={{ ...FlexRow, gap: '5px', marginLeft: 'auto' }}>
           <img src={arrowLeft} alt={'ArrowLeft'} style={labelButtonCss} />
@@ -80,8 +85,8 @@ function Explorer() {
       </div>
       <Grid container spacing={4}>
         {getCards()}
-      </Grid>
-    </div>
+      </Grid> */}
+    </ExplorerContainer>
   );
 }
 

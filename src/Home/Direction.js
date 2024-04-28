@@ -21,6 +21,8 @@ const AddressContainer = {
   alignItems: 'center',
   marginTop: '50px',
   gap: '10px',
+  paddingLeft: '20px',
+  paddingRight: '20px',
 };
 
 function Direction() {

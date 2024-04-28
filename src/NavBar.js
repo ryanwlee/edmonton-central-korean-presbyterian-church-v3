@@ -60,22 +60,22 @@ function NavBar({ handleDrawerToggle }) {
           <img src={logo} alt='Logo' style={logoCss} />
         </Link>
         <div style={navItemsCss}>
-          <Link to={'intro'} style={navItemCss}>
+          {/* <Link to={'intro'} style={navItemCss}>
             소개
           </Link>
-          <Divider />
+          <Divider /> */}
           <Link to={'service'} style={navItemCss}>
             예배
           </Link>
-          <Divider />
-          <Typography variant='h6' component='div' style={navItemCss}>
+          {/* <Divider />
+          <Link to={'announcement'} style={navItemCss}>
             소식
-          </Typography>
+          </Link>
           <Divider />
           <Typography variant='h6' component='div' style={navItemCss}>
             주보
-          </Typography>
-          <IconButton
+          </Typography> */}
+          {/* <IconButton
             size='large'
             edge='start'
             color='inherit'
@@ -84,7 +84,7 @@ function NavBar({ handleDrawerToggle }) {
             sx={buttonCss}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
         </div>
       </Toolbar>
     </AppBar>
