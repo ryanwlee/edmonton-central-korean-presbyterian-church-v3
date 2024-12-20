@@ -1,14 +1,12 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import Pin from '../images/pin.png';
-import { Label, ContentBold } from '../Style';
+import { Label, ContentBold, Container, GREY_BG_COLOR } from '../Style';
 
-const Container = {
-  display: 'flex',
-  flexDirection: 'column',
-  paddingBottom: '150px',
-  alignItems: 'center',
-  paddingTop: '150px',
-};
+// const Container = {
+//   display: 'flex',
+//   flexDirection: 'column',
+//   alignItems: 'center',
+// };
 
 const pinCss = {
   height: '20px',
@@ -27,7 +25,7 @@ const AddressContainer = {
 
 function Direction() {
   return (
-    <div style={Container}>
+    <Container style={{ backgroundColor: GREY_BG_COLOR }}>
       <div style={Label}>오시는 길</div>
       <div style={AddressContainer}>
         <img src={Pin} alt={'Pin'} style={pinCss} />
@@ -42,7 +40,7 @@ function Direction() {
         loading='lazy'
         referrerpolicy='no-referrer-when-downgrade'
       ></iframe>
-    </div>
+    </Container>
   );
 }
 

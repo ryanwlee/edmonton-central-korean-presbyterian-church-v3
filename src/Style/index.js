@@ -43,23 +43,23 @@ export const LabelGreen = {
 
 export const Content = {
   color: '#353535',
-  fontSize: '18px',
+  fontSize: '16px',
   fontWeight: '300',
   fontFamily: 'KoPubWorld Dotum Light',
   textAlign: 'center',
-  lineHeight: '25px',
+  lineHeight: '20px',
 };
 
 export const ContentMedium = {
   color: '#353535',
-  fontSize: '18px',
+  fontSize: '16px',
   fontWeight: '300',
   fontFamily: 'KoPubWorld Dotum Medium',
 };
 
 export const ContentBold = {
   color: '#353535',
-  fontSize: '18px',
+  fontSize: '16px',
   fontWeight: '300',
   fontFamily: 'KoPubWorld Dotum Bold',
   textAlign: 'center',
@@ -67,20 +67,22 @@ export const ContentBold = {
 
 export const ContentBoldGreen = {
   color: '#5DB683',
-  fontSize: '18px',
+  fontSize: '16px',
   fontWeight: '300',
   fontFamily: 'KoPubWorld Dotum Bold',
   textAlign: 'center',
 };
 
 export const Container = Styled.div`
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
 
   @media ${device.lg} {
-    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 `;
 

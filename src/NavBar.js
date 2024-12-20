@@ -5,6 +5,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from './images/logo.png';
 import { Link } from 'react-router-dom';
+import Styled from 'styled-components';
+import { device } from './Style/index'
 
 const navBarCss = {
   display: 'flex',
@@ -25,34 +27,42 @@ const navItemsCss = {
   justifyContent: 'flex-end',
 };
 
-const navItemCss = {
-  width: '15%',
-  maxWidth: '198px',
-  minWidth: '100px',
-  textAlign: 'center',
-  fontSize: '15px',
-  fontWeight: '600',
-  display: 'flex',
-  justifyContent: 'center',
-  flexDirection: 'column',
-  fontFamily: 'KoPubWorld Dotum Bold',
-  color: '#FFFFFF',
-  textDecoration: 'none',
-};
+const NavItemCss = Styled(Link)`
+  width: 15%;
+  max-width: 198px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: KoPubWorld Dotum Bold;
+  color: #FFFFFF;
+  text-decoration: none;
 
-const dividerCss = {
-  borderRight: '2px solid rgba(255, 255, 255, 0.2)',
-  height: '20px',
-  marginTop: 'auto',
-  marginBottom: 'auto',
-};
+  @media ${device.md} {
+    display: none;
+  }
+`;
+
+const Divider = Styled.div`
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  @media ${device.md} {
+    display: none;
+  }
+`;
 
 const buttonCss = {
   width: '100px',
+  display: { xs: 'block', md: 'none' },
 };
 
 function NavBar({ handleDrawerToggle }) {
-  const Divider = () => <div style={dividerCss}></div>;
   return (
     <AppBar position='static'>
       <Toolbar sx={navBarCss}>
@@ -60,13 +70,17 @@ function NavBar({ handleDrawerToggle }) {
           <img src={logo} alt='Logo' style={logoCss} />
         </Link>
         <div style={navItemsCss}>
-          {/* <Link to={'intro'} style={navItemCss}>
+          <NavItemCss to={'intro'}>
             소개
-          </Link>
-          <Divider /> */}
-          <Link to={'service'} style={navItemCss}>
+          </NavItemCss>
+          <Divider />
+          <NavItemCss to={'service'}>
             예배
-          </Link>
+          </NavItemCss>
+          <Divider />
+          <NavItemCss to={'https://booking.appointy.com/eckpc'}>
+            시설물 예약
+          </NavItemCss>
           {/* <Divider />
           <Link to={'announcement'} style={navItemCss}>
             소식
@@ -75,7 +89,7 @@ function NavBar({ handleDrawerToggle }) {
           <Typography variant='h6' component='div' style={navItemCss}>
             주보
           </Typography> */}
-          {/* <IconButton
+          <IconButton
             size='large'
             edge='start'
             color='inherit'
@@ -84,7 +98,7 @@ function NavBar({ handleDrawerToggle }) {
             sx={buttonCss}
           >
             <MenuIcon />
-          </IconButton> */}
+          </IconButton>
         </div>
       </Toolbar>
     </AppBar>

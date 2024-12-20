@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Hero from './Hero';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -24,19 +25,19 @@ function App(props) {
   };
 
   const drawerWidth = 240;
-  const navItems = ['test'];
+  const navItems = [{ name: '소개', to: 'intro' }, { name: '예배', to: 'service' }, { name: '시설물 예약', to: 'https://booking.appointy.com/eckpc' }];
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant='h6' sx={{ my: 2 }}>
-        MUI
+        메뉴
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.name} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={item.to}>
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}

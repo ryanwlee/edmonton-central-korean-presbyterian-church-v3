@@ -1,22 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.38a684a5.js",
-    "static/js/453.ef46d8a4.chunk.js": "/static/js/453.ef46d8a4.chunk.js",
+    "main.js": "/static/js/main.4b2dae84.js",
+    "static/js/453.a0957f3e.chunk.js": "/static/js/453.a0957f3e.chunk.js",
     "static/media/KoPubWorldDotumMedium.ttf": "/static/media/KoPubWorldDotumMedium.d4663cd37ec26b26240e.ttf",
     "static/media/KoPubWorldDotumBold.ttf": "/static/media/KoPubWorldDotumBold.7204e975c22b973d429c.ttf",
     "static/media/KoPubWorldDotumLight.woff": "/static/media/KoPubWorldDotumLight.b1a300b7894f98fd1563.woff",
     "static/media/hero.png": "/static/media/hero.404c6db9af45d40e3bc6.png",
     "static/media/establishRetrosansOTF.woff": "/static/media/establishRetrosansOTF.f10cb846addce61f6313.woff",
-    "static/media/dummy1.png": "/static/media/dummy1.6fa8ef6b57e364ece0db.png",
-    "static/media/1stFloor.png": "/static/media/1stFloor.99c7c8714bf6363ff059.png",
+    "static/media/pastor_dh.jpeg": "/static/media/pastor_dh.067526bb12fc36872252.jpeg",
+    "static/media/pastor_yh.jpeg": "/static/media/pastor_yh.a432fc20ab69a09cc85c.jpeg",
+    "static/media/ServiceInfo.png": "/static/media/ServiceInfo.21f5f409c39dff461bff.png",
+    "static/media/pastor_sj.jpeg": "/static/media/pastor_sj.09d57e88832ce5aae73d.jpeg",
+    "static/media/pastor_jy.jpeg": "/static/media/pastor_jy.56312eef2656cf63b2b6.jpeg",
+    "static/media/pastor_bs.jpeg": "/static/media/pastor_bs.30b0caced2994853adf7.jpeg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.38a684a5.js.map": "/static/js/main.38a684a5.js.map",
-    "453.ef46d8a4.chunk.js.map": "/static/js/453.ef46d8a4.chunk.js.map"
+    "main.4b2dae84.js.map": "/static/js/main.4b2dae84.js.map",
+    "453.a0957f3e.chunk.js.map": "/static/js/453.a0957f3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.38a684a5.js"
+    "static/js/main.4b2dae84.js"
   ]
 }

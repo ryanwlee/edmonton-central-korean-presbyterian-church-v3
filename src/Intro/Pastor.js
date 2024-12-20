@@ -1,113 +1,36 @@
-import dummy1 from '../images/dummy1.png';
+import pastor_dh from '../images/pastor_dh.jpeg';
 import {
-  Container,
-  FlexRow,
-  FlexColumn,
-  Label,
-  Content,
-  GreenLine,
-  ContentBoldGreen,
+  Container, FlexRow, FlexColumn, Label, Content,
 } from '../Style';
-
-const pastorImg = {
-  width: '20%',
-  maxWidth: '20%',
-  height: 'auto',
-};
-
-const pastorNameWrapper = {
-  gap: '10px',
-  alignItems: 'center',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  marginBottom: '50px',
-};
 
 const Pastor = () => {
   return (
-    <div
-      style={{
-        ...Container,
-        ...FlexRow,
-        backgroundColor: '#F5F6F6',
-        justifyContent: 'center',
-        gap: '40px',
-      }}
-    >
-      <img src={dummy1} alt={'Dummy1'} style={pastorImg} />
-      <div style={{ ...FlexColumn, textAlign: 'center' }}>
-        <div style={Label}>EKCPC</div>
-        <div style={{ ...FlexRow, ...pastorNameWrapper }}>
-          <div style={{ ...Label, fontSize: '30px' }}>정동호</div>
-          <div style={Label}>담임 목사님</div>
-        </div>
-        <div
-          style={{ ...Content, whiteSpace: 'pre-line', marginBottom: '80px' }}
-        >
-          네 마음을 다하고 목숨을 다하고 뜻을 다하고 힘을 다하여 주 너의
-          하나님을 사랑하라 하신 것이요{'\n'}둘째는 이것이니 네 이웃을 네 자신과
-          같이 사랑하라 하신 것이라{'\n'}이보다 더 큰 계명이 없느니라&nbsp; 주
-          너의 하나님을 사랑하라 하신 것이요{'\n'}둘째는 이것이니 네 이웃을 네
-          자신과 같이 사랑하라 하신 것이라
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginBottom: '50px',
-          }}
-        >
-          <div style={FlexColumn}>
-            <div style={GreenLine} />
-            <div style={FlexRow}>
-              <div style={{ ...ContentBoldGreen, marginRight: '60px' }}>
-                경력
-              </div>
-              <div
-                style={{
-                  ...Content,
-                  whiteSpace: 'pre-line',
-                  textAlign: 'left',
-                }}
-              >
-                공무원의 신분과 정치적 중립성은 법률이{'\n'}누구든지 체포 또는
-                구속을 당한 때에는 적부의 심사를{'\n'}대통령은
-                국무총리·국무위원·행정각부의 장 기타 법률이 정하는
-              </div>
-            </div>
+    <Container style={{}}>
+      <div style={{ ...FlexRow, gap: '20px' }}>
+        <img src={pastor_dh} alt={'pastor'} style={{ width: '45%', height: 'min-content', marginTop: 'auto', marginBottom: 'auto', borderRadius: '8px' }} />
+        <div style={{ ...FlexColumn, textAlign: 'left' }}>
+          <div style={{ ...Label }}>
+            EKCPC
           </div>
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginBottom: '50px',
-          }}
-        >
-          <div style={FlexColumn}>
-            <div style={GreenLine} />
-            <div style={FlexRow}>
-              <div style={{ ...ContentBoldGreen, marginRight: '60px' }}>
-                학력
-              </div>
-              <div
-                style={{
-                  ...Content,
-                  whiteSpace: 'pre-line',
-                  textAlign: 'left',
-                }}
-              >
-                공무원의 신분과 정치적 중립성은 법률이{'\n'}누구든지 체포 또는
-                구속을 당한 때에는 적부의 심사를{'\n'}대통령은
-                국무총리·국무위원·행정각부의 장 기타 법률이 정하는
-              </div>
+          <div style={FlexRow}>
+            <div style={{ ...Label, fontSize: '25px' }}>정동호</div>
+            <div style={{ ...Label, fontSize: '20px', marginLeft: '10px' }}>담임 목사님</div>
+          </div>
+          <div style={{ ...FlexColumn, marginTop: '30px', ...Content, textAlign: 'left' }}>
+            <div style={{ marginBottom: '20px' }}>
+              주의 평강과 사랑이 성도님들의 가정 위에 가득하시길 소망합니다. 우리는 지난 몇 년 동안 팬데믹 아래서의 삶이 쉽지 않았습니다. 모두가 어두운 터널을 걸어왔습니다. 연령 고하를 막론하고 힘든 길이었습니다.
             </div>
+            <div style={{ marginBottom: '20px' }}>
+              그러나 돌이켜보면 어렵고 힘든 것만 있었던 것은 아닙니다. 유익함도 있었습니다. 그 유익함은 하나님의 은혜를 더욱 깊이 경험하는 기회가 된 것입니다. 그동안 내가 마음껏 호흡하고 하루하루 무사한 것 당연한 것이라고 여겼습니다. 그러나 팬데믹 중에 호흡하고, 보호받고, 안전을 누리는 것이 얼마나 큰 은혜인지 깨닫게 되었습니다. 평상시 당연한 것이라고 여긴 것들이 당연한 것이 아니라 하나님의 돌보심이었습니다.
+            </div>
+            <div style={{ marginBottom: '30px' }}>
+              또한 감사한 것은 혼란스러운 상황에서도 교회와 성도들을 보호해 주셨습니다. 하나님이 지켜주지 않으시면 사람이 경영하는 것이 허사라는 것을 절실히 느꼈습니다. 성도님들 역시 힘든 시간들 가운데서도 하나님의 오묘한 손길을 경험하셨을 것입니다. 바라기는 받은 은혜를 기억하고 더욱 주님을 사랑하며 살아가시길 소망합니다. 모든 성도님들의가정에 하나님의 형통한 은혜가 넘치시길 바랍니다.
+            </div>
+            <div style={{ textAlign: 'right' }}>2024년 1월</div>
           </div>
         </div>
       </div>
-    </div>
+    </Container >
   );
 };
 

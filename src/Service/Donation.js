@@ -1,4 +1,4 @@
-import { Container, FlexRow, device } from '../Style';
+import { Container, device } from '../Style';
 import Styled from 'styled-components';
 
 const serviceTitle = {
@@ -16,12 +16,14 @@ const border = {
 
 const grey = {
   backgroundColor: '#F5F6F6',
-  ...FlexRow,
+  display: 'flex',
+  flexDirection: 'row',
 };
 
 const white = {
   backgroundColor: '#FFFFFF',
-  ...FlexRow,
+  display: 'flex',
+  flexDirection: 'row',
 };
 
 const Half = Styled.div`
@@ -30,7 +32,7 @@ const Half = Styled.div`
 `;
 
 const NormalText = Styled.div`
-margin-top: 8px;
+  margin-top: 8px;
   margin-bottom: 8px;
 `;
 
