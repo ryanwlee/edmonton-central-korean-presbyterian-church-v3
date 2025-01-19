@@ -8,7 +8,7 @@ function Home() {
   return (
     <Wrapper>
       {/* <Explorer /> */}
-      <MonthVerse />
+      {/* <MonthVerse /> */}
       <Service />
       <Direction />
     </Wrapper>

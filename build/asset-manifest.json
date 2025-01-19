@@ -1,26 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.4b2dae84.js",
+    "main.js": "/static/js/main.5803188d.js",
     "static/js/453.a0957f3e.chunk.js": "/static/js/453.a0957f3e.chunk.js",
     "static/media/KoPubWorldDotumMedium.ttf": "/static/media/KoPubWorldDotumMedium.d4663cd37ec26b26240e.ttf",
     "static/media/KoPubWorldDotumBold.ttf": "/static/media/KoPubWorldDotumBold.7204e975c22b973d429c.ttf",
+    "static/media/pastor_dh.jpg": "/static/media/pastor_dh.bed106928a987590cfcb.jpg",
+    "static/media/pastor_bs.jpg": "/static/media/pastor_bs.048cb911a79a3b62aa79.jpg",
+    "static/media/pastor_jy.jpg": "/static/media/pastor_jy.ca7eb75cf88945d4c8f9.jpg",
+    "static/media/pastor_yh.jpg": "/static/media/pastor_yh.6bdf2a3fbdc59d0b3057.jpg",
     "static/media/KoPubWorldDotumLight.woff": "/static/media/KoPubWorldDotumLight.b1a300b7894f98fd1563.woff",
     "static/media/hero.png": "/static/media/hero.404c6db9af45d40e3bc6.png",
     "static/media/establishRetrosansOTF.woff": "/static/media/establishRetrosansOTF.f10cb846addce61f6313.woff",
-    "static/media/pastor_dh.jpeg": "/static/media/pastor_dh.067526bb12fc36872252.jpeg",
-    "static/media/pastor_yh.jpeg": "/static/media/pastor_yh.a432fc20ab69a09cc85c.jpeg",
     "static/media/ServiceInfo.png": "/static/media/ServiceInfo.21f5f409c39dff461bff.png",
-    "static/media/pastor_sj.jpeg": "/static/media/pastor_sj.09d57e88832ce5aae73d.jpeg",
-    "static/media/pastor_jy.jpeg": "/static/media/pastor_jy.56312eef2656cf63b2b6.jpeg",
-    "static/media/pastor_bs.jpeg": "/static/media/pastor_bs.30b0caced2994853adf7.jpeg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.4b2dae84.js.map": "/static/js/main.4b2dae84.js.map",
+    "main.5803188d.js.map": "/static/js/main.5803188d.js.map",
     "453.a0957f3e.chunk.js.map": "/static/js/453.a0957f3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.4b2dae84.js"
+    "static/js/main.5803188d.js"
   ]
 }

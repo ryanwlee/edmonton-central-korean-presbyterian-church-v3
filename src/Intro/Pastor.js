@@ -1,13 +1,38 @@
-import pastor_dh from '../images/pastor_dh.jpeg';
+import Styled from 'styled-components';
+import pastor_dh from '../images/pastor_dh.jpg';
 import {
-  Container, FlexRow, FlexColumn, Label, Content,
+  Container, FlexRow, FlexColumn, Label, Content, device
 } from '../Style';
+
+const PastorImg = Styled.img`
+  width: 50%;
+  height: min-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+
+  @media ${device.md} {
+    display: none;
+  }
+`;
+
+const SmallPastorImg = Styled.img`
+  display: none;
+
+  @media ${device.md} {
+    display: block;
+    width: 100%;
+    height: min-content;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+`;
 
 const Pastor = () => {
   return (
     <Container style={{}}>
       <div style={{ ...FlexRow, gap: '20px' }}>
-        <img src={pastor_dh} alt={'pastor'} style={{ width: '45%', height: 'min-content', marginTop: 'auto', marginBottom: 'auto', borderRadius: '8px' }} />
+        <PastorImg src={pastor_dh} alt={'pastor'} />
         <div style={{ ...FlexColumn, textAlign: 'left' }}>
           <div style={{ ...Label }}>
             EKCPC
@@ -16,6 +41,7 @@ const Pastor = () => {
             <div style={{ ...Label, fontSize: '25px' }}>정동호</div>
             <div style={{ ...Label, fontSize: '20px', marginLeft: '10px' }}>담임 목사님</div>
           </div>
+          <SmallPastorImg src={pastor_dh} alt={'pastor'} />
           <div style={{ ...FlexColumn, marginTop: '30px', ...Content, textAlign: 'left' }}>
             <div style={{ marginBottom: '20px' }}>
               주의 평강과 사랑이 성도님들의 가정 위에 가득하시길 소망합니다. 우리는 지난 몇 년 동안 팬데믹 아래서의 삶이 쉽지 않았습니다. 모두가 어두운 터널을 걸어왔습니다. 연령 고하를 막론하고 힘든 길이었습니다.
@@ -26,7 +52,6 @@ const Pastor = () => {
             <div style={{ marginBottom: '30px' }}>
               또한 감사한 것은 혼란스러운 상황에서도 교회와 성도들을 보호해 주셨습니다. 하나님이 지켜주지 않으시면 사람이 경영하는 것이 허사라는 것을 절실히 느꼈습니다. 성도님들 역시 힘든 시간들 가운데서도 하나님의 오묘한 손길을 경험하셨을 것입니다. 바라기는 받은 은혜를 기억하고 더욱 주님을 사랑하며 살아가시길 소망합니다. 모든 성도님들의가정에 하나님의 형통한 은혜가 넘치시길 바랍니다.
             </div>
-            <div style={{ textAlign: 'right' }}>2024년 1월</div>
           </div>
         </div>
       </div>

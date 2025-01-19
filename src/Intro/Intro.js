@@ -1,22 +1,54 @@
-import Pastor from './Pastor';
-import Pastors from './Pastors';
-import History1980 from './History1980';
-import History1990 from './History1990';
-import History2000 from './History2000';
-import History2010 from './History2010';
-import History2020 from './History2020';
-import { Wrapper } from '../Style';
+import Pastor from "./Pastor";
+import Pastors from "./Pastors";
+import { Wrapper, Container } from "../Style";
+import HistoryHandler from "./HistoryHandler";
+import HistoryData from "./HistoryData";
+
+import Styled from "styled-components";
+
+const HistoryContainer = Styled.div` 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 function Intro() {
   return (
     <Wrapper>
       <Pastor />
       <Pastors />
-      <History1980 />
-      <History1990 />
-      <History2000 />
-      <History2010 />
-      <History2020 />
+      <Container>
+        <HistoryHandler
+          data={HistoryData[1980]}
+          initialYear={1988}
+          shortInitialYear={80}
+          initialShow={true}
+        />
+        <HistoryHandler
+          data={HistoryData[1990]}
+          initialYear={1990}
+          shortInitialYear={0}
+          initialShow={false}
+        />
+        <HistoryHandler
+          data={HistoryData[2000]}
+          initialYear={2000}
+          shortInitialYear={0}
+          initialShow={false}
+        />
+        <HistoryHandler
+          data={HistoryData[2010]}
+          initialYear={2010}
+          shortInitialYear={0}
+          initialShow={false}
+        />
+        <HistoryHandler
+          data={HistoryData[2020]}
+          initialYear={2020}
+          shortInitialYear={0}
+          initialShow={false}
+        />
+      </Container>
     </Wrapper>
   );
 }

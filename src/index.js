@@ -10,6 +10,7 @@ import Intro from './Intro/Intro';
 import Container from './Container';
 import Service from './Service/Service';
 import Announcement from './Announcement/Announcement';
+import Reservation from './Reservation/Intro';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: '/announcement',
         element: <Container component={<Announcement />} />,
+      },
+      {
+        path: '/reserve',
+        element: <Container component={<Reservation />} />,
+      },
+      {
+        path: '*',
+        element: <Container component={<Home />} />,
       },
     ],
   },

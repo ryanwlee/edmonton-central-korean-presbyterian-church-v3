@@ -1,6 +1,5 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from './images/logo.png';
@@ -78,7 +77,7 @@ function NavBar({ handleDrawerToggle }) {
             예배
           </NavItemCss>
           <Divider />
-          <NavItemCss to={'https://booking.appointy.com/eckpc'}>
+          <NavItemCss to={'reserve'}>
             시설물 예약
           </NavItemCss>
           {/* <Divider />
