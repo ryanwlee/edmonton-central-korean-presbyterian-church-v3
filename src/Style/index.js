@@ -1,12 +1,12 @@
-import Styled from 'styled-components';
+import Styled from "styled-components";
 
 const size = {
-  xs: '400px', // for small screen mobile
-  sm: '600px', // for mobile screen
-  md: '900px', // for tablets
-  lg: '1280px', // for laptops
-  xl: '1440px', // for desktop / monitors
-  xxl: '1920px', // for big screens
+  xs: "400px", // for small screen mobile
+  sm: "600px", // for mobile screen
+  md: "900px", // for tablets
+  lg: "1280px", // for laptops
+  xl: "1440px", // for desktop / monitors
+  xxl: "1920px", // for big screens
 };
 
 export const device = {
@@ -18,7 +18,7 @@ export const device = {
   xxl: `(max-width: ${size.xxl})`,
 };
 
-export const GREY_BG_COLOR = '#F5F6F6';
+export const GREY_BG_COLOR = "#F5F6F6";
 
 export const Wrapper = Styled.div`
   display: flex;
@@ -26,51 +26,51 @@ export const Wrapper = Styled.div`
 `;
 
 export const Label = {
-  color: '#353535',
-  fontSize: '22px',
-  fontWeight: '500',
-  fontFamily: 'establishRetrosansOTF',
-  lineHeight: '35px',
+  color: "#353535",
+  fontSize: "22px",
+  fontWeight: "500",
+  fontFamily: "establishRetrosansOTF",
+  lineHeight: "35px",
 };
 
 export const LabelGreen = {
-  color: '#5DB683',
-  fontSize: '22px',
-  fontWeight: '500',
-  fontFamily: 'establishRetrosansOTF',
-  lineHeight: '35px',
+  color: "#5DB683",
+  fontSize: "22px",
+  fontWeight: "500",
+  fontFamily: "establishRetrosansOTF",
+  lineHeight: "35px",
 };
 
 export const Content = {
-  color: '#353535',
-  fontSize: '16px',
-  fontWeight: '300',
-  fontFamily: 'KoPubWorld Dotum Light',
-  textAlign: 'center',
-  lineHeight: '20px',
+  color: "#353535",
+  fontSize: "16px",
+  fontWeight: "300",
+  fontFamily: "KoPubWorld Dotum Light",
+  textAlign: "center",
+  lineHeight: "20px",
 };
 
 export const ContentMedium = {
-  color: '#353535',
-  fontSize: '16px',
-  fontWeight: '300',
-  fontFamily: 'KoPubWorld Dotum Medium',
+  color: "#353535",
+  fontSize: "16px",
+  fontWeight: "300",
+  fontFamily: "KoPubWorld Dotum Medium",
 };
 
 export const ContentBold = {
-  color: '#353535',
-  fontSize: '16px',
-  fontWeight: '300',
-  fontFamily: 'KoPubWorld Dotum Bold',
-  textAlign: 'center',
+  color: "#353535",
+  fontSize: "16px",
+  fontWeight: "300",
+  fontFamily: "KoPubWorld Dotum Bold",
+  textAlign: "center",
 };
 
 export const ContentBoldGreen = {
-  color: '#5DB683',
-  fontSize: '16px',
-  fontWeight: '300',
-  fontFamily: 'KoPubWorld Dotum Bold',
-  textAlign: 'center',
+  color: "#5DB683",
+  fontSize: "16px",
+  fontWeight: "300",
+  fontFamily: "KoPubWorld Dotum Bold",
+  textAlign: "center",
 };
 
 export const Container = Styled.div`
@@ -84,30 +84,40 @@ export const Container = Styled.div`
     padding-left: 80px;
     padding-right: 80px;
   }
+
+  @media ${device.md} {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media ${device.sm} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 export const FlexRow = {
-  display: 'flex',
-  flexDirection: 'row',
+  display: "flex",
+  flexDirection: "row",
 };
 
 export const FlexColumn = {
-  display: 'flex',
-  flexDirection: 'column',
+  display: "flex",
+  flexDirection: "column",
 };
 
 export const LeftArrowButtonCss = {
-  height: '50px',
-  marginRight: 'auto',
+  height: "50px",
+  marginRight: "auto",
 };
 
 export const RightArrowButtonCss = {
-  height: '50px',
-  marginLeft: 'auto',
+  height: "50px",
+  marginLeft: "auto",
 };
 
 export const GreenLine = {
-  borderTop: '4px solid #5DB683',
-  height: '5px',
-  width: '26px',
+  borderTop: "4px solid #5DB683",
+  height: "5px",
+  width: "26px",
 };

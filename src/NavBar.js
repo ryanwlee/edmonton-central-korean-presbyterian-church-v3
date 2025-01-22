@@ -1,29 +1,29 @@
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import logo from './images/logo.png';
-import { Link } from 'react-router-dom';
-import Styled from 'styled-components';
-import { device } from './Style/index'
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import logo from "./images/logo.png";
+import { Link } from "react-router-dom";
+import Styled from "styled-components";
+import { device } from "./Style/index";
 
 const navBarCss = {
-  display: 'flex',
-  height: '60px',
-  backgroundColor: '#353535',
-  color: '#FFFFFF',
+  display: "flex",
+  height: "60px",
+  backgroundColor: "#353535",
+  color: "#FFFFFF",
 };
 
 const logoCss = {
-  maxWidth: '344px',
-  height: '40px',
+  maxWidth: "344px",
+  height: "40px",
 };
 
 const navItemsCss = {
-  display: 'flex',
-  flexDirection: 'row',
-  flexGrow: '1',
-  justifyContent: 'flex-end',
+  display: "flex",
+  flexDirection: "row",
+  flexGrow: "1",
+  justifyContent: "flex-end",
 };
 
 const NavItemCss = Styled(Link)`
@@ -57,29 +57,27 @@ const Divider = Styled.div`
 `;
 
 const buttonCss = {
-  width: '100px',
-  display: { xs: 'block', md: 'none' },
+  width: "60px",
+  display: { xs: "block", md: "none" },
 };
 
 function NavBar({ handleDrawerToggle }) {
   return (
-    <AppBar position='static'>
+    <AppBar position="static">
       <Toolbar sx={navBarCss}>
-        <Link to={'/'}>
-          <img src={logo} alt='Logo' style={logoCss} />
+        <Link to={"/"}>
+          <img src={logo} alt="Logo" style={logoCss} />
         </Link>
         <div style={navItemsCss}>
-          <NavItemCss to={'intro'}>
-            소개
-          </NavItemCss>
+          <NavItemCss to={"intro"}>소개</NavItemCss>
           <Divider />
-          <NavItemCss to={'service'}>
-            예배
-          </NavItemCss>
+          <NavItemCss to={"service"}>예배</NavItemCss>
           <Divider />
-          <NavItemCss to={'reserve'}>
-            시설물 예약
-          </NavItemCss>
+          <NavItemCss to={"education"}>교육부</NavItemCss>
+          <Divider />
+          <NavItemCss to={"serving"}>사역과 섬김</NavItemCss>
+          <Divider />
+          <NavItemCss to={"reserve"}>시설 예약</NavItemCss>
           {/* <Divider />
           <Link to={'announcement'} style={navItemCss}>
             소식
@@ -89,10 +87,10 @@ function NavBar({ handleDrawerToggle }) {
             주보
           </Typography> */}
           <IconButton
-            size='large'
-            edge='start'
-            color='inherit'
-            aria-label='menu'
+            size="small"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
             onClick={handleDrawerToggle}
             sx={buttonCss}
           >
