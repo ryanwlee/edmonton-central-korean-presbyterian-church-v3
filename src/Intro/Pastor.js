@@ -11,10 +11,11 @@ import {
 
 const PastorImg = Styled.img`
   width: 50%;
-  height: min-content;
+  height: auto;
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 15px;
+  object-fit: cover;
 
   @media ${device.md} {
     display: none;
@@ -27,9 +28,10 @@ const SmallPastorImg = Styled.img`
   @media ${device.md} {
     display: block;
     width: 100%;
-    height: min-content;
+    height: auto;
     border-radius: 15px;
     margin-top: 15px;
+    object-fit: cover;
   }
 `;
 

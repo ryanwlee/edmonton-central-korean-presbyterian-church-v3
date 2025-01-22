@@ -3,7 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "./images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Styled from "styled-components";
 import { device } from "./Style/index";
 
@@ -37,7 +37,7 @@ const NavItemCss = Styled(Link)`
   justify-content: center;
   flex-direction: column;
   font-family: KoPubWorld Dotum Bold;
-  color: #FFFFFF;
+  color: ${({ active }) => (active ? "#5DB683" : "#ffffff")};
   text-decoration: none;
 
   @media ${device.md} {
@@ -62,6 +62,9 @@ const buttonCss = {
 };
 
 function NavBar({ handleDrawerToggle }) {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <AppBar position="static">
       <Toolbar sx={navBarCss}>
@@ -69,15 +72,40 @@ function NavBar({ handleDrawerToggle }) {
           <img src={logo} alt="Logo" style={logoCss} />
         </Link>
         <div style={navItemsCss}>
-          <NavItemCss to={"intro"}>소개</NavItemCss>
+          <NavItemCss
+            to={"/intro"}
+            active={currentPath === "/intro" ? true : false}
+          >
+            소개
+          </NavItemCss>
           <Divider />
-          <NavItemCss to={"service"}>예배</NavItemCss>
+          <NavItemCss
+            to={"/service"}
+            active={currentPath === "/service" ? true : false}
+          >
+            예배
+          </NavItemCss>
           <Divider />
-          <NavItemCss to={"education"}>교육부</NavItemCss>
+          <NavItemCss
+            to={"/education"}
+            active={currentPath === "/education" ? true : false}
+          >
+            교육부
+          </NavItemCss>
           <Divider />
-          <NavItemCss to={"serving"}>사역과 섬김</NavItemCss>
+          <NavItemCss
+            to={"/serving"}
+            active={currentPath === "/serving" ? true : false}
+          >
+            사역과 섬김
+          </NavItemCss>
           <Divider />
-          <NavItemCss to={"reserve"}>시설 예약</NavItemCss>
+          <NavItemCss
+            to={"/reserve"}
+            active={currentPath === "/reserve" ? true : false}
+          >
+            시설 예약
+          </NavItemCss>
           {/* <Divider />
           <Link to={'announcement'} style={navItemCss}>
             소식
