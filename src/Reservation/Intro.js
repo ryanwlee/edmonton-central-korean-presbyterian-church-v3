@@ -1,123 +1,136 @@
-import { Wrapper, Container } from "../Style";
+import { useState, useEffect } from "react";
 import Styled from "styled-components";
+import { device } from "../Style";
 
-const ReserveButton = Styled.button`
-  background-color: #5DB683;
+const ReservationContainer = Styled.div`
+  width: 100%;
+  padding: 40px 0;
+  background-color: white;
+`;
+
+const ButtonContainer = Styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media ${device.md} {
+    gap: 10px;
+  }
+`;
+
+const RoomButton = Styled.button`
+  background-color: ${({ isSelected }) => isSelected ? '#4a9268' : '#5DB683'};
   color: white;
-  font-size: 18px;
-  font-weight: 300;
-  font-family: KoPubWorld Dotum Bold;
-  text-align: center;
-  border: 0;
+  padding: 15px 25px;
+  border: none;
   border-radius: 5px;
-  width: 70px;
-  height: 35px;
+  cursor: pointer;
+  font-family: KoPubWorld Dotum Bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #4a9268;
+  }
+
+  @media ${device.md} {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+`;
+
+const Title = Styled.h1`
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: establishRetrosansOTF;
+  margin-bottom: 30px;
+  text-align: center;
+`;
+
+const CalendarContainer = Styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 600px;
+  position: relative;
+`;
+
+const CalendarFrame = Styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: ${({ isActive }) => isActive ? '1' : '0'};
+  visibility: ${({ isActive }) => isActive ? 'visible' : 'hidden'};
+  transition: opacity 0.3s ease;
+  padding: 0 20px;
 `;
 
 function Intro() {
-  const titleStyle = {
-    color: "#000000",
-    fontSize: "22px",
-    fontWeight: "500",
-    fontFamily: "establishRetrosansOTF",
-    marginBottom: "40px",
+  const [selectedRoom, setSelectedRoom] = useState(null);
+
+  const temp_url = "https://calendar.app.google/MGSFBAakcnJo9fkK7";
+  const temp_embed =
+    <iframe
+      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1L5i_CkLcFLzOHixQVqky08bTT3VIywfskUtfPb7a27FEmeuw81b_X3zg2SRdP2oMXQkM4xLTO?gv=true"
+      style={{ border: 0, width: '100%', height: '100%' }}
+      frameBorder="0"
+      loading="eager"
+    />;
+
+  const rooms = [
+    { name: "본당", embed: temp_embed, url: temp_url },
+    { name: "유치부실", embed: temp_embed, url: temp_url},
+    { name: "소예배실", embed: temp_embed, url: temp_url },
+    { name: "교육관 1층", embed: temp_embed, url: temp_url},
+    { name: "교육관 2층 1", embed: temp_embed, url: temp_url},
+    { name: "교육관 2층 2", embed: temp_embed, url: temp_url},
+    { name: "주방", embed: temp_embed, url: temp_url},
+  ];
+
+  const handleRoomHover = (roomName) => {
+    setSelectedRoom(roomName);
   };
 
-  const contentStyle = {
-    fontSize: "18px",
-    fontWeight: "300",
-    fontFamily: "KoPubWorld Dotum Bold",
-    display: "flex",
-    justifyContent: "left",
-    alignItems: "center",
-    width: "190px",
-  };
-
-  const rowStyle = {
-    display: "flex",
-    flexDirection: "row",
-    height: "35px",
-    marginBottom: "10px",
-    gap: "15px",
-    justifyContent: "center",
+  const handleRoomClick = (url) => {
+    window.open(url, '_blank');
   };
 
   return (
-    <Wrapper>
-      <Container>
-        <div style={titleStyle}>시설 예약</div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>본당</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc";
-            }}
+    <ReservationContainer>
+      <Title>시설 예약</Title>
+      <ButtonContainer>
+        {rooms.map((room) => (
+          <RoomButton
+            key={room.name}
+            isSelected={selectedRoom === room.name}
+            onMouseEnter={() => handleRoomHover(room.name)}
+            onClick={() => handleRoomClick(room.url)}
           >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>유치부실</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc";
-            }}
+            {room.name}
+          </RoomButton>
+        ))}
+      </ButtonContainer>
+      <CalendarContainer>
+        {rooms.map((room) => (
+          <CalendarFrame
+            key={room.name}
+            isActive={selectedRoom === room.name}
           >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>소예배실 (아동부실)</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc";
-            }}
-          >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>교육관 1층 (체육관)</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc2";
-            }}
-          >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>교육관 2층 1 (찬양대실)</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc2";
-            }}
-          >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>교육관 2층 2 (세미나 룸)</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc2";
-            }}
-          >
-            예약
-          </ReserveButton>
-        </div>
-        <div style={rowStyle}>
-          <div style={contentStyle}>주방</div>
-          <ReserveButton
-            onClick={() => {
-              window.location.href = "https://booking.appointy.com/eckpc";
-            }}
-          >
-            예약
-          </ReserveButton>
-        </div>
-      </Container>
-    </Wrapper>
+            {room.embed}
+          </CalendarFrame>
+        ))}
+      </CalendarContainer>
+    </ReservationContainer>
   );
 }
 
