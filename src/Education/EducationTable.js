@@ -45,6 +45,7 @@ const EducationInfoRow = Styled.div`
   padding-top: 9px;
   padding-bottom: 9px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 `;
 
 const EducationInfoName = Styled.div`
@@ -86,7 +87,7 @@ const CollapseTitle = Styled.div`
   gap: 7px;
   word-break: break-word;
   text-align: left;
-  width: 90px;
+  width: 100px;
 `;
 
 const CollapseBold = Styled.div`
@@ -110,8 +111,8 @@ const educationData = [
       "영유아 유치부는 미취학 아이들과 함께 모이는 신앙 공동체입니다.",
     time: "매주 주일 오전 11시",
     location: "1층 영유아유치부실",
-    leader: "유지영 목사, 최영옥 부장",
-    people: "이은주 박정림 남길주 김성민 전푸른솔 조이안 송병준",
+    leader: "유지영 목사, 최영옥 부장, 박정림 차장",
+    people: "남길주 김성민 김수민 전푸른솔 조이안 송병준 한서윤 최예빈 김성혜",
   },
   {
     id: 2,
@@ -120,8 +121,8 @@ const educationData = [
       "아동부는 Grade 1부터 Grade 6까지의 어린이들이 함께 모이는 신앙 공동체입니다.",
     time: "매주 주일 오전 11시",
     location: "1층 아동부실",
-    leader: "윤병섭 목사, 이영희 부장",
-    people: "문정란 안혜정 남궁하민 조일조 유주평 신예빈 이캐빈 박다영",
+    leader: "윤병섭 목사, 문정란 부장, 김보영 차장",
+    people: "김사랑 남궁하민 신예빈 이재훈 이진희 전인숙 정민재 조일조 최진",
   },
   {
     id: 3,
@@ -129,11 +130,11 @@ const educationData = [
     description:
       "중고등부는 Grade 7부터 Grade 12까지의 중고등학생들이 함께 모이는 신앙 공동체입니다.",
     time: "매주 주일 오전 11시",
-    location: "1층 교육관 (체육관)",
-    leader: "이수지 전도사, 한효숙 부장",
+    location: "교육관 1층 (체육관)",
+    leader: "이수지 전도사, 윤숙자 부장, 김병철 차장",
     people:
-      "윤한성 남궁하준 이은희 김소영 김정호 황영석 김소희 김민철 최다은 정안젤라",
-    people2: "* 보조교사: 송병찬 이우송",
+      "강지석 김민철 김소영 김소희 김정호 남궁하준 송병찬 이우송 이현수 황영석",
+    people2: "* 보조교사: 류강현 박준성 이유진 이효리",
   },
   {
     id: 4,
@@ -141,29 +142,30 @@ const educationData = [
     description: "청년들이 함께 모이는 신앙 공동체입니다.",
     time: "매주 토요일 오후 6시 30분",
     location: "1층 아동부실",
-    leader: "윤병섭 목사, 이영희 부장",
+    leader: "최요한 목사, 신원호 부장, 김사성 간사, 문지혜 간사",
+    people:
+      "김민철 김사랑 김수민 김은서 김태민 박진석 신진규 이중표 한서윤 황동주",
   },
   {
     id: 5,
     title: "한글 학교",
     description: "한글을 익히면서 예배 드리는 신앙 공동체 입니다.",
     time: "매주 주일 오전 10시",
-    location: "2층 교육관 (세미나실)",
-    leader: "강주연 부장",
-    people: "홍 성 임성식 이순례",
-    people2: "* 보조교사: 김태준 선세린 선세은 임도언 최 율",
+    location: "교육관 2층 (세미나실)",
+    leader: "박지희 부장",
+    people: "김영남 김태준 김태희 변희원 홍성",
   },
 ];
 
 const EducationTable = () => {
   const [expand, setExpand] = useState([]);
 
-  const handleExpand = (id) => {
-    setExpand([...expand, id]);
-  };
-
-  const handleCollapse = (id) => {
-    setExpand(expand.filter((i) => i !== id));
+  const handleExpand = (id, isExpanded) => {
+    if (isExpanded) {
+      setExpand(expand.filter((i) => i !== id));
+    } else {
+      setExpand([...expand, id]);
+    }
   };
 
   return (
@@ -173,7 +175,10 @@ const EducationTable = () => {
         {educationData.map((r) => (
           <>
             <Divider />
-            <EducationInfoRow collapsed={expand.includes(r.id) ? false : true}>
+            <EducationInfoRow
+              collapsed={expand.includes(r.id) ? false : true}
+              onClick={() => handleExpand(r.id, expand.includes(r.id))}
+            >
               <EducationInfoName>{r.title}</EducationInfoName>
               <EducationInfoButton>
                 <AddIcon
@@ -192,7 +197,6 @@ const EducationTable = () => {
                     cursor: "pointer",
                     display: expand.includes(r.id) ? "block" : "none",
                   }}
-                  onClick={() => handleCollapse(r.id)}
                 />
               </EducationInfoButton>
             </EducationInfoRow>
@@ -215,7 +219,7 @@ const EducationTable = () => {
                 )}
                 {r.leader && (
                   <CollapseSmallRow>
-                    <CollapseTitle>섬기는 사람들</CollapseTitle>
+                    <CollapseTitle>섬기는 분들</CollapseTitle>
                     <CollapseContent>
                       <CollapseBold>담당자</CollapseBold>
                       {r.leader}

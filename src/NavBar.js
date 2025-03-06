@@ -101,6 +101,13 @@ function NavBar({ handleDrawerToggle }) {
           </NavItemCss>
           <Divider />
           <NavItemCss
+            to={"/jubo"}
+            active={currentPath === "/jubo" ? true : false}
+          >
+            주보
+          </NavItemCss>
+          <Divider />
+          <NavItemCss
             to={"/reserve"}
             active={currentPath === "/reserve" ? true : false}
           >

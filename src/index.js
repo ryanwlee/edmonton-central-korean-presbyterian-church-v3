@@ -13,7 +13,8 @@ import Announcement from "./Announcement/Announcement";
 import Reservation from "./Reservation/Intro";
 import Serving from "./Serving/Serving";
 import Education from "./Education/Education";
-
+import Jubo from "./Jubo/Jubo";
+import Admin from "./Admin/Admin";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +48,14 @@ const router = createBrowserRouter([
       {
         path: "/education",
         element: <Container component={<Education />} />,
+      },
+      {
+        path: "/jubo",
+        element: <Container component={<Jubo />} />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
       },
       {
         path: "*",

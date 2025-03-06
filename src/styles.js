@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import KopubWorldDotumBold from './fonts/KoPubWorldDotumBold.ttf';
-import KopubWorldDotumLight from './fonts/KoPubWorldDotumLight.woff';
-import EstablishRetroSans from './fonts/establishRetrosansOTF.woff';
-import KopubWorldDotumMedium from './fonts/KoPubWorldDotumMedium.ttf';
+import KopubWorldDotumBold from "./fonts/KoPubWorldDotumBold.ttf";
+import KopubWorldDotumLight from "./fonts/KoPubWorldDotumLight.woff";
+import EstablishRetroSans from "./fonts/establishRetrosansOTF.woff";
+import KopubWorldDotumMedium from "./fonts/KoPubWorldDotumMedium.ttf";
 
 export default createGlobalStyle`
   @font-face {

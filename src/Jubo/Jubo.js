@@ -1,13 +1,23 @@
-import React from "react";
+import { Container } from "../Style";
 import PDFView from "./PDFView";
-// import samplePDF from "./path/to/your/sample.pdf";
+const juboPdf = "https://edmontoncc.net/jubofile/jubo.pdf";
+
+const serviceTitle = {
+  color: "#000000",
+  fontSize: "22px",
+  fontWeight: "500",
+  fontFamily: "establishRetrosansOTF",
+  marginBottom: "40px",
+};
 
 const Jubo = () => {
   return (
-    <div className="App">
-      <h1>PDF Viewer Example</h1>
-      {/* <PDFView file={samplePDF} /> */}
-    </div>
+    <Container>
+      <div style={{ marginBottom: "80px" }}>
+        <div style={serviceTitle}>주보</div>
+        <PDFView file={juboPdf} />
+      </div>
+    </Container>
   );
 };
 

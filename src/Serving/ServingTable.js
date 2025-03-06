@@ -55,6 +55,7 @@ const ServingInfoRow = Styled.div`
   padding-top: 9px;
   padding-bottom: 9px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 `;
 
 const ServingInfoName = Styled.div`
@@ -132,7 +133,7 @@ const servingData = [
         id: 1,
         title: "국외선교",
         content:
-          "세네갈(보야교회), 카자흐스탄(발삐삑, 티켈리교회), 몽골: 이경환, 브라질: 강경찬, 일본: 오필재, 네팔: 서동아, 인도: 전하라",
+          "세네갈 00교회, K국 00교회, 이경환(몽골), 전하라(1국), 강경찬(브라질), 서동아(N국), 오필재(일본)",
         src: no1,
       },
       {
@@ -223,7 +224,7 @@ const servingData = [
         src: no2,
       },
       { id: 3, title: "전교인 성경 퀴즈대회", src: no3 },
-      { id: 4, title: "체육행사 활성화", src: no4 },
+      { id: 4, title: "전교인 찬양대회", src: no4 },
     ],
   },
   {
@@ -364,7 +365,6 @@ const servingData = [
         content: "에드먼턴 연합모임(부활절, 성탄축하 등)",
         src: no2,
       },
-      { id: 3, title: "전교인 찬양경연대회", src: no3 },
     ],
   },
 ];
@@ -372,12 +372,12 @@ const servingData = [
 const ServingTable = () => {
   const [expand, setExpand] = useState([]);
 
-  const handleExpand = (id) => {
-    setExpand([...expand, id]);
-  };
-
-  const handleCollapse = (id) => {
-    setExpand(expand.filter((i) => i !== id));
+  const handleExpand = (id, isExpanded) => {
+    if (isExpanded) {
+      setExpand(expand.filter((i) => i !== id));
+    } else {
+      setExpand([...expand, id]);
+    }
   };
 
   return (
@@ -387,7 +387,10 @@ const ServingTable = () => {
         {servingData.map((r) => (
           <>
             <Divider />
-            <ServingInfoRow collapsed={expand.includes(r.id) ? false : true}>
+            <ServingInfoRow
+              collapsed={expand.includes(r.id) ? false : true}
+              onClick={() => handleExpand(r.id, expand.includes(r.id))}
+            >
               <ServingInfoName>{r.title}</ServingInfoName>
               <ServingInfoButton>
                 <AddIcon
@@ -397,7 +400,6 @@ const ServingTable = () => {
                     cursor: "pointer",
                     display: expand.includes(r.id) ? "none" : "block",
                   }}
-                  onClick={() => handleExpand(r.id)}
                 />
                 <RemoveIcon
                   style={{
@@ -406,7 +408,6 @@ const ServingTable = () => {
                     cursor: "pointer",
                     display: expand.includes(r.id) ? "block" : "none",
                   }}
-                  onClick={() => handleCollapse(r.id)}
                 />
               </ServingInfoButton>
             </ServingInfoRow>
