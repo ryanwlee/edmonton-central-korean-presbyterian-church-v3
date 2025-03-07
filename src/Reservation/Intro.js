@@ -140,6 +140,7 @@ function Intro() {
             &showNav=0 - Hide the navigation buttons
           */
           src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=WEEK&mode=WEEK&showCalendars=0&showTitle=0"
+          title="calendarView"
           style={{ border: 0, width: '100%', height: '100%' }}
           frameBorder="0"
           scrolling="no"

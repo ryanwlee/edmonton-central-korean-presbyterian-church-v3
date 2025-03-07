@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useEffect, useState } from "react";
 
 import NavBar from "./NavBar";
@@ -14,15 +13,16 @@ import Hero from "./Hero";
 import Footer from "./Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import hero from "./images/hero.png"; // Import default hero image
+
+import hero from "./images/hero.png";
 import test_img from "./images/test_image.webp";
 
 import "./App.css";
 
 function App() {
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
-  const [heroVisible, setHeroVisible] = React.useState(false);
-  const [shouldRenderHero, setShouldRenderHero] = React.useState(true);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [heroVisible, setHeroVisible] = useState(false);
+  const [shouldRenderHero, setShouldRenderHero] = useState(true);
   const [currentHeroImage, setCurrentHeroImage] = useState(null);
   const location = useLocation();
   const transitionTime = 1000; // Total transition time in ms

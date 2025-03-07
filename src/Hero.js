@@ -1,9 +1,8 @@
-import hero from "./images/hero.png";
 import Button from "@mui/material/Button";
 import { FlexRow, FlexColumn, device } from "./Style";
 import Styled from "styled-components";
 
-const Container = Styled.div`
+const HeroContainer = Styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -65,7 +64,7 @@ const heroImageStyle = {
 
 function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
   return (
-    <Container visible={visible} transitionTime={transitionTime}>
+    <HeroContainer visible={visible} transitionTime={transitionTime}>
       <img src={heroImage} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
@@ -79,7 +78,7 @@ function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
         </div>
         {/* <Button style={mainButton}>새 가족 등록</Button> */}
       </HeroContent>
-    </Container>
+    </HeroContainer>
   );
 }
 
