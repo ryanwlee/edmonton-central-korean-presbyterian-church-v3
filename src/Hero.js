@@ -8,11 +8,12 @@ const Container = Styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  max-height: ${props => props.visible ? '1000px' : '0px'};
+  max-height: ${props => props.visible ? '800px' : '0px'};
   overflow: hidden;
-  transition: max-height ${props => props.transitionTime}ms ease-in-out;
+  transition: max-height ${props => props.transitionTime}ms cubic-bezier(.7,0,.3,1);
   opacity: ${props => props.visible ? '1' : '0'};
   transition-property: max-height, opacity;
+  transition-duration: ${props => props.transitionTime}ms;
 `;
 
 const HeroContent = Styled.div`
@@ -63,12 +64,9 @@ const heroImageStyle = {
 };
 
 function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
-  // Use the provided heroImage if available, otherwise fall back to the default hero image
-  const imageSource = heroImage || hero;
-
   return (
     <Container visible={visible} transitionTime={transitionTime}>
-      <img src={imageSource} alt="Hero" style={heroImageStyle} />
+      <img src={heroImage} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
         <div style={FlexRow}>
