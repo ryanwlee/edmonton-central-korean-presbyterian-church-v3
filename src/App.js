@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 
 import NavBar from "./NavBar";
 import Drawer from "@mui/material/Drawer";
@@ -18,6 +19,8 @@ import "./App.css";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [heroVisible, setHeroVisible] = React.useState(false);
+  const [shouldRenderHero, setShouldRenderHero] = React.useState(true);
   const location = useLocation();
 
   const handleDrawerToggle = () => {
@@ -38,11 +41,30 @@ function App() {
   const currentPath = location.pathname.substring(1); // Remove leading slash
   const currentPage = navItems.find(item => item.to === currentPath);
 
-  // Show Hero if we're on the home page (path is '/') or if the current page has an image
+  // Determine if Hero should be shown
   const showHero = location.pathname === '/' || (currentPage && currentPage.img !== null);
 
   // Get the hero image from the current page, if available
   const heroImage = currentPage?.img || null;
+
+  // Initial page load animation
+  useEffect(() => {
+    // Trigger animation after a short delay on initial load
+    setTimeout(() => setHeroVisible(showHero), 100);
+  }, []);
+
+  // Handle animation when route changes
+  useEffect(() => {
+    if (showHero) {
+      setShouldRenderHero(true);
+      // Small delay to ensure the component is rendered before animating
+      setTimeout(() => setHeroVisible(true), 50);
+    } else {
+      setHeroVisible(false);
+      // Wait for animation to complete before unmounting
+      setTimeout(() => setShouldRenderHero(false), 500);
+    }
+  }, [showHero]);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -88,7 +110,7 @@ function App() {
           {drawer}
         </Drawer>
       </nav>
-      {showHero && <Hero heroImage={heroImage} />}
+      {shouldRenderHero && <Hero heroImage={heroImage} visible={heroVisible} />}
       <Outlet />
       <Footer />
     </div>

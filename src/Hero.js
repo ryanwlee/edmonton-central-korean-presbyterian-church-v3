@@ -3,12 +3,17 @@ import Button from "@mui/material/Button";
 import { FlexRow, FlexColumn, device } from "./Style";
 import Styled from "styled-components";
 
-const container = {
-  position: "relative",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-start",
-};
+const Container = Styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: ${props => props.visible ? '1000px' : '0px'};
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  opacity: ${props => props.visible ? '1' : '0'};
+  transition-property: max-height, opacity;
+`;
 
 const HeroContent = Styled.div`
   position: absolute;
@@ -57,12 +62,12 @@ const heroImageStyle = {
   display: "block",
 };
 
-function Hero({ heroImage }) {
+function Hero({ heroImage, visible = true }) {
   // Use the provided heroImage if available, otherwise fall back to the default hero image
   const imageSource = heroImage || hero;
 
   return (
-    <div style={container}>
+    <Container visible={visible}>
       <img src={imageSource} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
@@ -76,7 +81,7 @@ function Hero({ heroImage }) {
         </div>
         {/* <Button style={mainButton}>새 가족 등록</Button> */}
       </HeroContent>
-    </div>
+    </Container>
   );
 }
 
