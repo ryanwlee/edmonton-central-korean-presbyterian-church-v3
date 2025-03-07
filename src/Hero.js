@@ -51,16 +51,19 @@ const mainButton = {
   fontFamily: "KoPubWorld Dotum Bold",
 };
 
-const heroImage = {
+const heroImageStyle = {
   width: "100%",
   height: "auto",
   display: "block",
 };
 
-function Hero() {
+function Hero({ heroImage }) {
+  // Use the provided heroImage if available, otherwise fall back to the default hero image
+  const imageSource = heroImage || hero;
+
   return (
     <div style={container}>
-      <img src={hero} alt="Hero" style={heroImage} />
+      <img src={imageSource} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
         <div style={FlexRow}>
