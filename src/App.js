@@ -46,6 +46,7 @@ function App() {
 
   // Get the hero image from the current page, if available
   const heroImage = currentPage?.img || null;
+  const transitionTime = 1000;
 
   // Initial page load animation
   useEffect(() => {
@@ -62,7 +63,7 @@ function App() {
     } else {
       setHeroVisible(false);
       // Wait for animation to complete before unmounting
-      setTimeout(() => setShouldRenderHero(false), 500);
+      setTimeout(() => setShouldRenderHero(false), transitionTime);
     }
   }, [showHero]);
 
@@ -110,7 +111,7 @@ function App() {
           {drawer}
         </Drawer>
       </nav>
-      {shouldRenderHero && <Hero heroImage={heroImage} visible={heroVisible} />}
+      {shouldRenderHero && <Hero heroImage={heroImage} visible={heroVisible} transitionTime={transitionTime} />}
       <Outlet />
       <Footer />
     </div>

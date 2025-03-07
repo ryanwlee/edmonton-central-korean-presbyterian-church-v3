@@ -10,7 +10,7 @@ const Container = Styled.div`
   justify-content: flex-start;
   max-height: ${props => props.visible ? '1000px' : '0px'};
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height ${props => props.transitionTime}ms ease-in-out;
   opacity: ${props => props.visible ? '1' : '0'};
   transition-property: max-height, opacity;
 `;
@@ -62,12 +62,12 @@ const heroImageStyle = {
   display: "block",
 };
 
-function Hero({ heroImage, visible = true }) {
+function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
   // Use the provided heroImage if available, otherwise fall back to the default hero image
   const imageSource = heroImage || hero;
 
   return (
-    <Container visible={visible}>
+    <Container visible={visible} transitionTime={transitionTime}>
       <img src={imageSource} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
