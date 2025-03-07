@@ -4,14 +4,6 @@ import { Wrapper, Container } from "../Style";
 import HistoryHandler from "./HistoryHandler";
 import HistoryData from "./HistoryData";
 
-import Styled from "styled-components";
-
-const HistoryContainer = Styled.div` 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
 function Intro() {
   return (
     <Wrapper>
