@@ -16,8 +16,7 @@ import { Link } from "react-router-dom";
 
 import "./App.css";
 
-function App(props) {
-  const { window } = props;
+function App() {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -30,6 +29,7 @@ function App(props) {
     { name: "예배", to: "service" },
     { name: "교육부", to: "education" },
     { name: "사역과 섬김", to: "serving" },
+    { name: "주보", to: "jubo" },
     { name: "시설 예약", to: "reserve" },
   ];
 
@@ -55,15 +55,11 @@ function App(props) {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
   return (
     <div className="App">
       <NavBar handleDrawerToggle={handleDrawerToggle} />
       <nav>
         <Drawer
-          container={container}
           variant="temporary"
           open={drawerOpen}
           onClose={handleDrawerToggle}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.c273bdb7.js",
+    "main.css": "/static/css/main.15e1edaa.css",
+    "main.js": "/static/js/main.6a701b33.js",
     "static/js/453.a0957f3e.chunk.js": "/static/js/453.a0957f3e.chunk.js",
     "static/media/KoPubWorldDotumMedium.ttf": "/static/media/KoPubWorldDotumMedium.d4663cd37ec26b26240e.ttf",
     "static/media/KoPubWorldDotumBold.ttf": "/static/media/KoPubWorldDotumBold.7204e975c22b973d429c.ttf",
@@ -12,14 +12,15 @@
     "static/media/KoPubWorldDotumLight.woff": "/static/media/KoPubWorldDotumLight.b1a300b7894f98fd1563.woff",
     "static/media/hero.png": "/static/media/hero.404c6db9af45d40e3bc6.png",
     "static/media/establishRetrosansOTF.woff": "/static/media/establishRetrosansOTF.f10cb846addce61f6313.woff",
-    "static/media/ServiceInfo.png": "/static/media/ServiceInfo.21f5f409c39dff461bff.png",
+    "static/media/serviceTime.png": "/static/media/serviceTime.670cd857d85132ce32fc.png",
+    "static/media/churchMap.png": "/static/media/churchMap.c313b5e2a7a72665390d.png",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.c273bdb7.js.map": "/static/js/main.c273bdb7.js.map",
+    "main.15e1edaa.css.map": "/static/css/main.15e1edaa.css.map",
+    "main.6a701b33.js.map": "/static/js/main.6a701b33.js.map",
     "453.a0957f3e.chunk.js.map": "/static/js/453.a0957f3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.c273bdb7.js"
+    "static/css/main.15e1edaa.css",
+    "static/js/main.6a701b33.js"
   ]
 }

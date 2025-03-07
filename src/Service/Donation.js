@@ -1,29 +1,29 @@
-import { Container, device } from '../Style';
-import Styled from 'styled-components';
+import { Container, device } from "../Style";
+import Styled from "styled-components";
 
 const serviceTitle = {
-  color: '#000000',
-  fontSize: '22px',
-  fontWeight: '500',
-  fontFamily: 'establishRetrosansOTF',
-  marginBottom: '40px',
+  color: "#000000",
+  fontSize: "22px",
+  fontWeight: "500",
+  fontFamily: "establishRetrosansOTF",
+  marginBottom: "40px",
 };
 
 const border = {
-  borderTop: '2px solid rgb(0, 0, 0, 0.2)',
-  borderBottom: '2px solid rgb(0, 0, 0, 0.2)',
+  borderTop: "2px solid rgb(0, 0, 0, 0.2)",
+  borderBottom: "2px solid rgb(0, 0, 0, 0.2)",
 };
 
 const grey = {
-  backgroundColor: '#F5F6F6',
-  display: 'flex',
-  flexDirection: 'row',
+  backgroundColor: "#F5F6F6",
+  display: "flex",
+  flexDirection: "row",
 };
 
 const white = {
-  backgroundColor: '#FFFFFF',
-  display: 'flex',
-  flexDirection: 'row',
+  backgroundColor: "#FFFFFF",
+  display: "flex",
+  flexDirection: "row",
 };
 
 const Half = Styled.div`
@@ -168,7 +168,7 @@ const Donation = () => {
               <NormalText>
                 한글로 기록할 경우 e-transfer가 되지 않습니다.
               </NormalText>
-              <div style={{ color: '#D10606' }}>
+              <div style={{ color: "#D10606" }}>
                 구별된 헌금 영문은 헌금 봉투에 적혀 있는 영문을 기록하시면
                 됩니다.
               </div>
@@ -207,13 +207,13 @@ const Donation = () => {
             <div>
               <NormalText>
                 <BoldText>
-                  • 에드몬톤 중앙교회는 어떤 상황에서도{' '}
+                  • 에드몬톤 중앙교회는 어떤 상황에서도{" "}
                   <RedText>
                     개별적으로 온라인 헌금을 요구하거나 강요하지 않습니다. 만약
                     이러한 요청을 개별적으로 이메일이나 전화로 받으신 경우,
                     중앙교회를 사칭한 사기(fraud)이오니 절대 응하지 마시기
                     바랍니다.
-                  </RedText>{' '}
+                  </RedText>{" "}
                   이런 경우 교역자들에게 문의하시기 바랍니다.
                 </BoldText>
               </NormalText>
@@ -221,7 +221,7 @@ const Donation = () => {
           </ContentRowCenter>
         </ContentSubColumn>
       </ContentColumn>
-      <ContentColumn style={{ marginTop: '100px' }}>
+      <ContentColumn style={{ marginTop: "100px" }}>
         <ContentSubColumn>
           <SubHeader>개인 수표를 우편으로 보내는 헌금</SubHeader>
           <div style={border}>
