@@ -1,14 +1,19 @@
-import hero from "./images/hero.png";
 import Button from "@mui/material/Button";
 import { FlexRow, FlexColumn, device } from "./Style";
 import Styled from "styled-components";
 
-const container = {
-  position: "relative",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-start",
-};
+const HeroContainer = Styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: ${props => props.visible ? '800px' : '0px'};
+  overflow: hidden;
+  transition: max-height ${props => props.transitionTime}ms cubic-bezier(.7,0,.3,1);
+  opacity: ${props => props.visible ? '1' : '0'};
+  transition-property: max-height, opacity;
+  transition-duration: ${props => props.transitionTime}ms;
+`;
 
 const HeroContent = Styled.div`
   position: absolute;
@@ -51,16 +56,16 @@ const mainButton = {
   fontFamily: "KoPubWorld Dotum Bold",
 };
 
-const heroImage = {
+const heroImageStyle = {
   width: "100%",
   height: "auto",
   display: "block",
 };
 
-function Hero() {
+function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
   return (
-    <div style={container}>
-      <img src={hero} alt="Hero" style={heroImage} />
+    <HeroContainer visible={visible} transitionTime={transitionTime}>
+      <img src={heroImage} alt="Hero" style={heroImageStyle} />
       <HeroContent>
         {/* <div style={mainText}>메인 텍스트</div> */}
         <div style={FlexRow}>
@@ -73,7 +78,7 @@ function Hero() {
         </div>
         {/* <Button style={mainButton}>새 가족 등록</Button> */}
       </HeroContent>
-    </div>
+    </HeroContainer>
   );
 }
 
