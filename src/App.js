@@ -42,19 +42,22 @@ function App() {
     { name: "예배", to: "service", img: hero },
     { name: "교육부", to: "education", img: null },
     { name: "사역과 섬김", to: "serving", img: null },
-    { name: "주보", to: "jubo", img: test_img },
+    // { name: "주보", to: "jubo", img: test_img },
+    { name: "주보", to: "jubo", img: null },
     { name: "시설 예약", to: "reserve", img: null },
   ];
 
   // Find the current page in navItems
   const currentPath = location.pathname.substring(1); // Remove leading slash
-  const currentPage = navItems.find(item => item.to === currentPath);
+  const currentPage = navItems.find((item) => item.to === currentPath);
 
   // Determine if Hero should be shown
-  const showHero = location.pathname === '/' || (currentPage && currentPage.img !== null);
+  const showHero =
+    location.pathname === "/" || (currentPage && currentPage.img !== null);
 
   // Get the hero image from the current page, if available
-  const nextHeroImage = location.pathname === '/' ? hero : currentPage?.img || null;
+  const nextHeroImage =
+    location.pathname === "/" ? hero : currentPage?.img || null;
   const isHeroImageChanging = showHero && currentHeroImage !== nextHeroImage;
 
   // Initial page load animation
