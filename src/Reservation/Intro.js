@@ -71,7 +71,7 @@ const CalendarContainer = Styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 600px;
+  height: 900px;
   position: relative;
 `;
 
@@ -139,7 +139,7 @@ function Intro() {
             &showTitle=0 - Hide the title
             &showNav=0 - Hide the navigation buttons
           */
-          src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=WEEK&mode=WEEK&showCalendars=0&showTitle=0"
+          src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=MONTH&showCalendars=0&showTitle=0"
           title="calendarView"
           style={{ border: 0, width: '100%', height: '100%' }}
           frameBorder="0"
