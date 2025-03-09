@@ -67,51 +67,56 @@ const TitleContainer = Styled.div`
 `;
 
 const CalendarContainer = Styled.div`
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   height: 600px;
   position: relative;
+
+  @media ${device.md} {
+    width: calc(100% - 20px);
+  }
 `;
 
 function Intro() {
-
   const rooms = [
     {
       name: "본당",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Z2Sg7mgdohD6LF1ibQO04fbgyClm4SU4a5dGhwjUsrgzWSEe_GJ26t2uVzaLRiHdTCJSoLHR-?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Z2Sg7mgdohD6LF1ibQO04fbgyClm4SU4a5dGhwjUsrgzWSEe_GJ26t2uVzaLRiHdTCJSoLHR-?gv=true",
     },
     {
       name: "유치부실",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3U4e6rANxgkaGerWxICmqJS7Ptt4mVLUtPI3NlYx--nflDMSEMNmmnlyNLsthMvx5vPm4i_N5N?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3U4e6rANxgkaGerWxICmqJS7Ptt4mVLUtPI3NlYx--nflDMSEMNmmnlyNLsthMvx5vPm4i_N5N?gv=true",
     },
     {
       name: "소예배실 (아동부실)",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Qchvgs943ZXXewOB182cr4Otfy3OTycNiOjuY5DAAXsyu1Pb4sHpvAE5tOOKUPHzwWku2HTv-?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Qchvgs943ZXXewOB182cr4Otfy3OTycNiOjuY5DAAXsyu1Pb4sHpvAE5tOOKUPHzwWku2HTv-?gv=true",
     },
     {
       name: "교육관 1층 (체육관)",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2OJnTe5d7ZMeJS2UgHMSnre5qMm3GZ27NQF_cK4M1Q8sI6lj5eiwmIKvlkCUjI2J1dST5oA9vy?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2OJnTe5d7ZMeJS2UgHMSnre5qMm3GZ27NQF_cK4M1Q8sI6lj5eiwmIKvlkCUjI2J1dST5oA9vy?gv=true",
     },
     {
       name: "교육관 2층 1 (찬양대실)",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0rikBcRFd2o0QcquXiha8x_ENBGqDo7h0bb56KLbcWhREek57zf_z3M4U71O9Y9VTYs1-SWjP7?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0rikBcRFd2o0QcquXiha8x_ENBGqDo7h0bb56KLbcWhREek57zf_z3M4U71O9Y9VTYs1-SWjP7?gv=true",
     },
     {
       name: "교육관 2층 2 (세미나룸)",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2a1SAw5AE8hwZ5_GKvs3n7Ysg3i1uK39pMqGKmKwSAWuclGqtpMdTi_weWE-fhMLTIQUnwAloo?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2a1SAw5AE8hwZ5_GKvs3n7Ysg3i1uK39pMqGKmKwSAWuclGqtpMdTi_weWE-fhMLTIQUnwAloo?gv=true",
     },
     {
       name: "주방",
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Wt2J4tf1nTLdmm0Ky1k4DWU3a_4zc49Kiq-3UTBV_oW4kZuPblmkcF6pLAJqPDDRfeT9z9PcF?gv=true"
+      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Wt2J4tf1nTLdmm0Ky1k4DWU3a_4zc49Kiq-3UTBV_oW4kZuPblmkcF6pLAJqPDDRfeT9z9PcF?gv=true",
     },
   ];
 
   return (
     <ReservationContainer>
       <TitleContainer>
-        <Title href="https://calendar.google.com/calendar/appointments/AcZssZ0Am6kRBMFuS41caRLP9ig8aTbL_-Mw8IKNyA4=?gv=true" target="_blank">
+        <Title
+          href="https://calendar.google.com/calendar/appointments/AcZssZ0Am6kRBMFuS41caRLP9ig8aTbL_-Mw8IKNyA4=?gv=true"
+          target="_blank"
+        >
           시설 예약
         </Title>
       </TitleContainer>
@@ -119,7 +124,7 @@ function Intro() {
         {rooms.map((room) => (
           <RoomButton
             key={room.name}
-            onClick={() => window.open(room.url, '_blank')}
+            onClick={() => window.open(room.url, "_blank")}
           >
             {room.name}
           </RoomButton>
@@ -139,9 +144,13 @@ function Intro() {
             &showTitle=0 - Hide the title
             &showNav=0 - Hide the navigation buttons
           */
-          src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=WEEK&mode=WEEK&showCalendars=0&showTitle=0"
+          src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=MONTH&showCalendars=0&showTitle=0"
           title="calendarView"
-          style={{ border: 0, width: '100%', height: '100%' }}
+          style={{
+            border: 0,
+            width: "100%",
+            height: "100%",
+          }}
           frameBorder="0"
           scrolling="no"
         />
