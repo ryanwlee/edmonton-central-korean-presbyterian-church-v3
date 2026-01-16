@@ -45,6 +45,12 @@ function App() {
     // { name: "주보", to: "jubo", img: test_img },
     { name: "주보", to: "jubo", img: null },
     { name: "시설 예약", to: "reserve", img: null },
+    {
+      name: "주일설교 오디오",
+      href: "https://open.spotify.com/show/2Lkolq2OcdFktuWOxbY20d?si=YHcjVU_4QhmF9JKjB1XYyg",
+      external: true,
+      img: null,
+    },
   ];
 
   // Find the current page in navItems
@@ -111,8 +117,11 @@ function App() {
           <ListItem key={item.name} disablePadding>
             <ListItemButton
               sx={{ textAlign: "center" }}
-              component={Link}
-              to={item.to}
+              component={item.external ? "a" : Link}
+              to={item.external ? undefined : item.to}
+              href={item.external ? item.href : undefined}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
             >
               <ListItemText primary={item.name} />
             </ListItemButton>
