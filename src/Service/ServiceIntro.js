@@ -89,9 +89,6 @@ const ServiceIntro = () => {
             </a>
           </div>
         </ServiceInfoLine>
-        <ServiceInfoLine>
-          • Grace Central Church: Sunday Worship Service 1 pm
-        </ServiceInfoLine>
       </div>
       <ImageContainer>
         <StyledImage src={ServiceTime} />

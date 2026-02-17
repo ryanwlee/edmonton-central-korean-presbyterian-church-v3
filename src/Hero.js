@@ -7,12 +7,12 @@ const HeroContainer = Styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  max-height: ${props => props.visible ? '800px' : '0px'};
+  max-height: ${(props) => (props.visible ? "800px" : "0px")};
   overflow: hidden;
-  transition: max-height ${props => props.transitionTime}ms cubic-bezier(.7,0,.3,1);
-  opacity: ${props => props.visible ? '1' : '0'};
+  transition: max-height ${(props) => props.transitionTime}ms cubic-bezier(.7,0,.3,1);
+  opacity: ${(props) => (props.visible ? "1" : "0")};
   transition-property: max-height, opacity;
-  transition-duration: ${props => props.transitionTime}ms;
+  transition-duration: ${(props) => props.transitionTime}ms;
 `;
 
 const HeroContent = Styled.div`
@@ -73,7 +73,6 @@ function Hero({ heroImage, visible = true, transitionTime = 1000 }) {
           <div style={{ marginLeft: "15px" }}>
             <div style={subText}>1부 | 오전 9:00</div>
             <div style={subText}>2부 | 오전 11:00</div>
-            <div style={subText}>3부 | 오후 1:30</div>
           </div>
         </div>
         {/* <Button style={mainButton}>새 가족 등록</Button> */}

@@ -121,7 +121,7 @@ const educationData = [
       "아동부는 Grade 1부터 Grade 6까지의 어린이들이 함께 모이는 신앙 공동체입니다.",
     time: "매주 주일 오전 11시",
     location: "1층 아동부실",
-    leader: "유푸름 전도사, 문정란 부장, 김보영 차장",
+    leader: "최요한 목사, 문정란 부장, 김보영 차장",
     people: "김사랑 남궁하민 신예빈 이재훈 이진희 전인숙 정민재 조일조 최진",
   },
   {
@@ -141,9 +141,8 @@ const educationData = [
     title: "청년부",
     description: "청년들이 함께 모이는 신앙 공동체입니다.",
     time: "매주 토요일 오후 6시 30분",
-    location: "1층 아동부실",
-    leader: "최요한 목사, 신원호 부장, 김사성 간사, 문지혜 간사",
-    people: "김성민 손예지 이우송 최다은",
+    location: "본당",
+    leader: "최요한 목사",
   },
   {
     id: 5,
