@@ -17,8 +17,6 @@ import { Link } from "react-router-dom";
 import hero from "./images/hero.png";
 import test_img from "./images/test_image.webp";
 
-import "./App.css";
-
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [heroVisible, setHeroVisible] = useState(false);
