@@ -1,65 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import GlobalFonts from "./styles";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import App from "@/app/App";
+import theme from "@/app/theme";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home/Home";
-import Intro from "./Intro/Intro";
-import Container from "./Container";
-import Service from "./Service/Service";
-import Announcement from "./Announcement/Announcement";
-import Reservation from "./Reservation/Intro";
-import Serving from "./Serving/Serving";
-import Education from "./Education/Education";
-import Jubo from "./Jubo/Jubo";
-import Admin from "./Admin/Admin";
+import Home from "@/pages/Home/Home";
+import Intro from "@/pages/Intro/Intro";
+import Service from "@/pages/Service/Service";
+import Announcement from "@/pages/Announcement/Announcement";
+import Reservation from "@/pages/Reservation/Reservation";
+import Serving from "@/pages/Serving/Serving";
+import Education from "@/pages/Education/Education";
+import Jubo from "@/pages/Jubo/Jubo";
+import Admin from "@/pages/Admin/Admin";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <div />,
     children: [
-      {
-        path: "/",
-        element: <Container component={<Home />} />,
-      },
-      {
-        path: "/intro",
-        element: <Container component={<Intro />} />,
-      },
-      {
-        path: "/service",
-        element: <Container component={<Service />} />,
-      },
-      {
-        path: "/announcement",
-        element: <Container component={<Announcement />} />,
-      },
-      {
-        path: "/reserve",
-        element: <Container component={<Reservation />} />,
-      },
-      {
-        path: "/serving",
-        element: <Container component={<Serving />} />,
-      },
-      {
-        path: "/education",
-        element: <Container component={<Education />} />,
-      },
-      {
-        path: "/jubo",
-        element: <Container component={<Jubo />} />,
-      },
-      {
-        path: "/admin",
-        element: <Admin />,
-      },
-      {
-        path: "*",
-        element: <Container component={<Home />} />,
-      },
+      { index: true, element: <Home /> },
+      { path: "intro", element: <Intro /> },
+      { path: "service", element: <Service /> },
+      { path: "announcement", element: <Announcement /> },
+      { path: "reserve", element: <Reservation /> },
+      { path: "serving", element: <Serving /> },
+      { path: "education", element: <Education /> },
+      { path: "jubo", element: <Jubo /> },
+      { path: "admin", element: <Admin /> },
+      { path: "*", element: <Home /> },
     ],
   },
 ]);
@@ -69,7 +40,9 @@ if (!rootElement) throw new Error('Root element not found');
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <GlobalFonts />
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
