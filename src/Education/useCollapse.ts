@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 
-const useCollapse = (collapsed: boolean): { ref: React.RefObject<HTMLDivElement>; height: string } => {
-  const ref = useRef<HTMLDivElement>(null);
+const useCollapse = (collapsed: boolean): { ref: React.RefObject<HTMLDivElement | null>; height: string } => {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [height, setHeight] = useState("0px");
 
   useEffect(() => {

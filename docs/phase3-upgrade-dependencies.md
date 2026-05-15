@@ -176,26 +176,57 @@ The codemod should handle this automatically.
 
 ## Step 4: Handle @react-pdf-viewer + pdfjs-dist
 
-**Situation:** `@react-pdf-viewer` v4 with pdfjs-dist v4 support was merged in the repo but may not have a stable npm release. pdfjs-dist v3 has known security vulnerabilities (CVE-2024-4367, XSS via malicious PDFs).
+**Current Situation:**
+- `@react-pdf-viewer` v3.12.0 is the latest (no v4 released)
+- pdfjs-dist v3 has security vulnerabilities (CVE-2024-4367, XSS via malicious PDFs)
+- pdfjs-dist **skipped v4 entirely** → latest is v5.7.x
 
-**Recommended approach — switch to `@react-pdf/renderer` or use pdfjs-dist directly:**
+**Recommended: Switch to `react-pdf` v10 (actively maintained, supports pdfjs v5)**
 
-Since the project only displays a single PDF with basic controls, the simplest approach is to upgrade pdfjs-dist and use it with the viewer if v4 is available, or fall back to an iframe embed.
+Since the project only displays a single PDF with basic controls, `react-pdf` is the most actively maintained library with modern pdfjs support.
 
-**Option A: Try @react-pdf-viewer v4 (if released)**
+**Option A (Recommended): Use react-pdf v10**
+
 ```bash
-npm install @react-pdf-viewer/core@latest @react-pdf-viewer/default-layout@latest pdfjs-dist@^4
+yarn add react-pdf@^10
+yarn remove @react-pdf-viewer/core @react-pdf-viewer/default-layout pdfjs-dist
 ```
 
-Update `PDFView.tsx`:
+Replace `src/Jubo/PDFView.tsx`:
 ```tsx
-// Worker URL must match installed pdfjs-dist version
-<Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.mjs`}>
+import { Document, Page, pdfjs } from 'react-pdf';
+import { useState } from 'react';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+
+// Set worker URL
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
+interface PDFViewProps {
+  file: string;
+}
+
+const PDFView = ({ file }: PDFViewProps) => {
+  const [numPages, setNumPages] = useState<number>(0);
+
+  return (
+    <Document
+      file={file}
+      onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+    >
+      {Array.from(new Array(numPages), (_, index) => (
+        <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+      ))}
+    </Document>
+  );
+};
+
+export default PDFView;
 ```
 
-**Option B: If v4 is not available, use iframe fallback (simplest)**
+**Option B: iframe fallback (zero dependencies, simplest)**
 
-Replace `PDFView.tsx` with a Google Docs viewer or direct PDF embed:
+Replace `PDFView.tsx` with direct PDF embed:
 ```tsx
 const PDFView = ({ file }: PDFViewProps) => (
   <iframe
@@ -209,63 +240,75 @@ const PDFView = ({ file }: PDFViewProps) => (
 ```
 
 Then remove:
-- `@react-pdf-viewer/core`
-- `@react-pdf-viewer/default-layout`
-- `pdfjs-dist`
-
-**Option C: Use react-pdf (actively maintained)**
 ```bash
-npm install react-pdf
-npm uninstall @react-pdf-viewer/core @react-pdf-viewer/default-layout pdfjs-dist
+yarn remove @react-pdf-viewer/core @react-pdf-viewer/default-layout pdfjs-dist
 ```
 
-This is a well-maintained alternative that supports pdfjs v4 natively.
+**Option C: Stay with @react-pdf-viewer + upgrade pdfjs (risky)**
 
-**Decision:** Check npm at execution time. If `@react-pdf-viewer@4.x` exists, use Option A. Otherwise, Option C (`react-pdf`) is the best maintained alternative. Option B is the zero-dependency fallback.
+```bash
+yarn add pdfjs-dist@^5
+```
+
+Update worker URL in `PDFView.tsx`:
+```tsx
+<Worker workerUrl="https://unpkg.com/pdfjs-dist@5.7.284/build/pdf.worker.min.mjs">
+```
+
+**Warning:** @react-pdf-viewer v3 was built for pdfjs v3. Compatibility with pdfjs v5 is not guaranteed.
+
+**Chosen Approach: Option A (react-pdf v10)**
+
+This is the decided approach for this project. Use react-pdf v10 for best security, maintainability, and user experience. The other options are documented for reference but should NOT be used unless Option A fails.
 
 ---
 
-## Step 5: Remove styled-components (prepare for Phase 4)
+## Step 5: Verify styled-components compatibility
 
 **Do NOT remove yet.** styled-components is still used throughout the codebase. In this phase, just ensure it's compatible with React 19:
 
 ```bash
-npm install styled-components@latest
+yarn add styled-components@latest
 ```
 
-styled-components v6 supports React 19. Actual removal happens in Phase 4a when styles are migrated to MUI theme.
+styled-components v6 already supports React 19. Actual removal happens in Phase 4a when styles are migrated to MUI theme.
+
+**Verify:** `yarn dev` - styled components render correctly, no console warnings about React compatibility.
 
 ---
 
 ## Step 6: Remove unused/unnecessary packages
 
 **Remove from dependencies:**
-- `@babel/plugin-proposal-private-property-in-object` (CRA workaround, already removed in Phase 1)
-- `@testing-library/jest-dom` (no tests)
-- `@testing-library/react` (no tests)
-- `@testing-library/user-event` (no tests)
-- `web-vitals` (already removed in Phase 1)
+- `@testing-library/jest-dom` (no tests in project)
+- `@testing-library/react` (no tests in project)
+- `@testing-library/user-event` (no tests in project)
 
 ```bash
-npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event
+yarn remove @testing-library/jest-dom @testing-library/react @testing-library/user-event
 ```
+
+**Already removed in previous phases:**
+- `@babel/plugin-proposal-private-property-in-object` (Phase 1 - CRA workaround)
+- `web-vitals` (Phase 1 - CRA boilerplate)
+- `prop-types` (Phase 2 - redundant with TypeScript)
 
 ---
 
 ## Step 7: Update Prettier
 
 ```bash
-npm install -D prettier@latest
+yarn add -D prettier@latest
 ```
 
-No config changes needed.
+No config changes needed. Prettier 3.x is already installed.
 
 ---
 
 ## Step 8: Add ESLint (replaces CRA's embedded config)
 
 ```bash
-npm install -D eslint @eslint/js typescript-eslint eslint-plugin-react-hooks
+yarn add -D eslint @eslint/js typescript-eslint eslint-plugin-react-hooks
 ```
 
 Create `eslint.config.ts`:
@@ -297,19 +340,25 @@ Add lint script to `package.json`:
 
 ## Step 9: Verify Everything
 
+Run complete verification suite:
+
 ```bash
-npm run typecheck    # TypeScript passes
-npm run lint         # ESLint passes (fix any issues)
-npm run dev          # App runs correctly
-npm run build        # Production build succeeds
+yarn typecheck    # TypeScript passes with zero errors
+yarn lint         # ESLint passes (fix any issues)
+yarn dev          # App runs correctly
+yarn build        # Production build succeeds
 ```
 
-Check:
-- All routes render
-- PDF viewer works (whichever option chosen)
-- Fonts load
-- Drawer and menu interactions work
-- No console errors
+**Manual testing checklist:**
+- [ ] All routes render correctly (/, /intro, /service, /education, /serving, /jubo, /reserve, /announcement, /admin)
+- [ ] PDF viewer loads and displays document on /jubo page
+- [ ] Custom fonts load correctly (KoPubWorld, establishRetrosans)
+- [ ] NavBar dropdown menu works
+- [ ] Mobile drawer opens/closes smoothly
+- [ ] Grid layouts display correctly (Explorer, Pastors pages)
+- [ ] File upload form works on /admin page
+- [ ] No console errors or warnings
+- [ ] Browser back/forward navigation works
 
 ---
 
@@ -325,9 +374,9 @@ Check:
     "@mui/material": "^6.x",
     "react": "^19.x",
     "react-dom": "^19.x",
-    "react-router": "^7.x",
+    "react-router-dom": "^7.x",
     "styled-components": "^6.x",
-    "react-pdf": "^9.x"
+    "react-pdf": "^10.x"
   },
   "devDependencies": {
     "@eslint/js": "^9.x",
@@ -339,10 +388,18 @@ Check:
     "prettier": "^3.x",
     "typescript": "^5.x",
     "typescript-eslint": "^8.x",
-    "vite": "^6.x"
+    "vite": "^5.x"
   }
 }
 ```
+
+**Key changes from current:**
+- ✅ React 18 → 19
+- ✅ react-router-dom 6 → 7 (keep react-router-dom, NOT react-router)
+- ✅ @mui/* 5 → 6
+- ✅ @react-pdf-viewer → react-pdf v10
+- ✅ Removed: @testing-library/* packages
+- ✅ Added: ESLint v9 with TypeScript support
 
 ---
 
@@ -350,9 +407,15 @@ Check:
 
 | Upgrade | Risk | Reason |
 |---------|------|--------|
-| React 18→19 | Low | No deprecated APIs used |
-| react-router 6→7 | Low | Simple router, no fetchers/loaders |
-| MUI 5→6 | Medium | Grid API change, slotProps migration, codemod helps |
-| PDF viewer | Medium | Depends on npm availability of v4, may need library swap |
-| styled-components | None | Just version bump, removal is Phase 4 |
+| React 18→19 | Low | No deprecated APIs used, v19 is stable |
+| react-router 6→7 | Low | Non-breaking upgrade, no API changes needed |
+| MUI 5→6 | Medium | Grid API change, slotProps migration, codemod automates most changes |
+| PDF viewer | Medium-High | Requires library change (react-pdf v10 recommended), or iframe fallback |
+| styled-components | None | Just version bump, already React 19 compatible, removal is Phase 4 |
 | Testing libs removal | None | Never used in source |
+| ESLint addition | Low | New tooling, may surface existing issues to fix |
+
+**Critical notes:**
+- PDF viewer has highest risk due to library change requirement
+- MUI codemod handles most breaking changes automatically
+- React Router v7 is simpler than expected (no import changes)

@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid2";
 import { Container, Label, FlexRow } from "../Style";
 
 import worship from "../images/worship.png";
@@ -62,7 +62,7 @@ function Explorer() {
   const getCards = () => {
     return list.map((l) => {
       return (
-        <Grid xs={6} md={3} style={FlexRow}>
+        <Grid size={{ xs: 6, md: 3 }} style={FlexRow}>
           <Card>
             <div style={imageContainer}>
               <img src={l.imgSrc} alt={l.imgAlt} style={imageCss} />
