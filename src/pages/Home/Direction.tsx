@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import Pin from '../images/pin.png';
+import Pin from '@/assets/images/pin.png';
 import { Label, ContentBold, Container, GREY_BG_COLOR } from '@/Style';
 
 // const Container = {

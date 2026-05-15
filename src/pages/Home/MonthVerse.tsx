@@ -1,6 +1,6 @@
-import LeftArrow from '../images/LeftArrow.png';
-import RightArrow from '../images/RightArrow.png';
-import doublequote from '../images/doublequote.png';
+import LeftArrow from '@/assets/images/LeftArrow.png';
+import RightArrow from '@/assets/images/RightArrow.png';
+import doublequote from '@/assets/images/doublequote.png';
 import {
   Container,
   GREY_BG_COLOR,

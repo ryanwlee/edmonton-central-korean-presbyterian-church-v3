@@ -6,7 +6,7 @@ import {
   ContentBold,
   ContentBoldGreen,
 } from '@/Style';
-import Date from '../images/date.png';
+import Date from '@/assets/images/date.png';
 
 const title = {
   color: '#000000',

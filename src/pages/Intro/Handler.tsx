@@ -1,7 +1,7 @@
 import {
   Container, FlexRow, FlexColumn, Label, ContentBoldGreen, GREY_BG_COLOR, ContentBold, Content
 } from '@/Style';
-import Rectangle from '../images/Rectangle.png';
+import Rectangle from '@/assets/images/Rectangle.png';
 
 interface HandlerRow {
   date: string;
