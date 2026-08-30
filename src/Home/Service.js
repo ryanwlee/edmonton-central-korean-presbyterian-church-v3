@@ -1,5 +1,5 @@
-import ServiceTime from "../images/serviceTime.png";
 import ChurchMap from "../images/churchMap.png";
+import ServiceTimeTable from "../Service/ServiceTimeTable";
 import { Container, Label, device } from "../Style";
 import Styled from "styled-components";
 
@@ -9,24 +9,25 @@ const ImageContainer = Styled.div`
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 
   @media ${device.lg} {
     flex-direction: column;
-    align-items: center;
     gap: 50px;
   }
 `;
 
-const StyledImage = Styled.img`
+const StyledImage = Styled.div`
   width: 100%;
   max-width: 45%;
   height: auto;
-  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
 
   @media ${device.lg} {
-    max-width: 500px;
+    max-width: 640px;
   }
 `;
 
@@ -48,7 +49,9 @@ function Service() {
         예배 안내
       </div>
       <ImageContainer>
-        <StyledImage src={ServiceTime} />
+        <StyledImage>
+          <ServiceTimeTable />
+        </StyledImage>
         <StyledImage2 src={ChurchMap} />
       </ImageContainer>
     </Container>

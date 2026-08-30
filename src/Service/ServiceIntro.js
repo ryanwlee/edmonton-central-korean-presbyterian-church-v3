@@ -1,7 +1,7 @@
 import { Container, device } from "../Style";
 import Styled from "styled-components";
-import ServiceTime from "../images/serviceTime.png";
 import ChurchMap from "../images/churchMap.png";
+import ServiceTimeTable from "./ServiceTimeTable";
 
 const serviceTitle = {
   color: "#000000",
@@ -25,24 +25,25 @@ const ImageContainer = Styled.div`
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 
   @media ${device.lg} {
     flex-direction: column;
-    align-items: center;
     gap: 50px;
   }
 `;
 
-const StyledImage = Styled.img`
+const StyledImage = Styled.div`
   width: 100%;
   max-width: 45%;
   height: auto;
-  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
 
   @media ${device.lg} {
-    max-width: 500px;
+    max-width: 640px;
   }
 `;
 
@@ -91,7 +92,9 @@ const ServiceIntro = () => {
         </ServiceInfoLine>
       </div>
       <ImageContainer>
-        <StyledImage src={ServiceTime} />
+        <StyledImage>
+          <ServiceTimeTable />
+        </StyledImage>
         <StyledImage2 src={ChurchMap} />
       </ImageContainer>
     </Container>

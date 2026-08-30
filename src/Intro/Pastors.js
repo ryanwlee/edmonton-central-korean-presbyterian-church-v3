@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import pastor_yh from "../images/pastor_yh.jpg";
 import pastor_jy from "../images/pastor_jy.jpg";
-import pastor_sj from "../images/pastor_sj.jpeg";
+import pastorPlaceholder from "../images/pastor_placeholder.svg";
 import {
   Container,
   Label,
@@ -14,14 +14,15 @@ const Pastors = () => {
   const pastors = [
     { name: "최요한 목사(행정, 청년부)", img: pastor_yh },
     { name: "유지영 목사(유아, 유치부)", img: pastor_jy },
-    { name: "이수지 전도사", img: pastor_sj },
+    { name: "김회민 목사(중,고등부)", img: pastorPlaceholder },
+    { name: "유민아 전도사(아동부)", img: pastorPlaceholder },
   ];
 
   const getCards = (ps) => {
     return ps.map((p) => (
-      <Grid xs={12} md={6}>
+      <Grid xs={12} md={6} key={p.name}>
         <div style={FlexColumn}>
-          <img src={p.img} alt={"pastor"} style={{ borderRadius: "8px" }} />
+          <img src={p.img} alt={p.name} style={{ borderRadius: "8px" }} />
           <div
             style={{
               ...ContentBold,
