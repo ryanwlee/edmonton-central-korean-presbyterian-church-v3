@@ -1,7 +1,8 @@
 import Grid from "@mui/material/Grid";
 import pastor_yh from "../images/pastor_yh.jpg";
 import pastor_jy from "../images/pastor_jy.jpg";
-import pastorPlaceholder from "../images/pastor_placeholder.svg";
+import pastor_hm from "../images/min.jpeg";
+import pastor_ma from "../images/mina.jpeg";
 import {
   Container,
   Label,
@@ -14,8 +15,8 @@ const Pastors = () => {
   const pastors = [
     { name: "최요한 목사(행정, 청년부)", img: pastor_yh },
     { name: "유지영 목사(유아, 유치부)", img: pastor_jy },
-    { name: "김회민 목사(중,고등부)", img: pastorPlaceholder },
-    { name: "유민아 전도사(아동부)", img: pastorPlaceholder },
+    { name: "김회민 목사(중,고등부)", img: pastor_hm },
+    { name: "유민아 전도사(아동부)", img: pastor_ma },
   ];
 
   const getCards = (ps) => {

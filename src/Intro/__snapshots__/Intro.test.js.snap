@@ -309,7 +309,7 @@ exports[`matches snapshot 1`] = `
             >
               <img
                 alt="김회민 목사(중,고등부)"
-                src="pastor_placeholder.svg"
+                src="min.jpeg"
                 style="border-radius: 8px;"
               />
               <div
@@ -327,7 +327,7 @@ exports[`matches snapshot 1`] = `
             >
               <img
                 alt="유민아 전도사(아동부)"
-                src="pastor_placeholder.svg"
+                src="mina.jpeg"
                 style="border-radius: 8px;"
               />
               <div

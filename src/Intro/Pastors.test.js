@@ -22,13 +22,13 @@ it("lists every staff member with a portrait", () => {
   }
 });
 
-it("uses the placeholder portrait for staff without a photo", () => {
+it("gives every staff member their own portrait", () => {
   renderWithRouter(<Pastors />);
 
-  for (const name of ["김회민 목사(중,고등부)", "유민아 전도사(아동부)"]) {
-    expect(screen.getByAltText(name)).toHaveAttribute(
-      "src",
-      expect.stringContaining("pastor_placeholder")
-    );
-  }
+  const sources = STAFF.map((name) =>
+    screen.getByAltText(name).getAttribute("src")
+  );
+
+  expect(new Set(sources).size).toBe(STAFF.length);
+  expect(sources).not.toContain(expect.stringContaining("placeholder"));
 });
