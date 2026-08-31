@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<body>
+  <div>
+    <div>
+      <div
+        style="display: flex; flex-direction: row; background-color: rgb(245, 246, 246); padding: 25px 20px 25px 20px; gap: 60px;"
+      >
+        <div
+          style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+        >
+          9.18
+        </div>
+        <div
+          style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+        >
+          <div>
+            <img
+              src="Rectangle.png"
+              style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+            />
+            첫 예배를 드림
+          </div>
+          <div>
+            두 번째 줄
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: flex; flex-direction: row; background-color: white; padding: 25px 20px 25px 20px; gap: 60px;"
+      >
+        <div
+          style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+        >
+          9.25
+        </div>
+        <div
+          style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+        >
+          <div>
+            <img
+              src="Rectangle.png"
+              style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+            />
+            노회 가입을 승인
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

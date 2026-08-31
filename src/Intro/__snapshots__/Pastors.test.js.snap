@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.emotion-0 {
+  --Grid-columns: 12;
+  --Grid-columnSpacing: 64px;
+  --Grid-rowSpacing: 64px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-width: 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: var(--Grid-rowSpacing) var(--Grid-columnSpacing);
+}
+
+.emotion-0>* {
+  --Grid-parent-columns: 12;
+}
+
+.emotion-0>* {
+  --Grid-parent-columnSpacing: 64px;
+}
+
+.emotion-0>* {
+  --Grid-parent-rowSpacing: 64px;
+}
+
+.emotion-1 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  width: calc(100% * 12 / var(--Grid-parent-columns) - (var(--Grid-parent-columns) - 12) * (var(--Grid-parent-columnSpacing) / var(--Grid-parent-columns)));
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width:900px) {
+  .emotion-1 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    width: calc(100% * 6 / var(--Grid-parent-columns) - (var(--Grid-parent-columns) - 6) * (var(--Grid-parent-columnSpacing) / var(--Grid-parent-columns)));
+  }
+}
+
+.c0 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .c0 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c0 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c0 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+      style="background-color: rgb(245, 246, 246);"
+    >
+      <div
+        style="color: rgb(53, 53, 53); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; line-height: 35px; text-align: center; margin-bottom: 50px;"
+      >
+        섬기는 사람들
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-8 emotion-0"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-md-6 emotion-1"
+        >
+          <div
+            style="display: flex; flex-direction: column;"
+          >
+            <img
+              alt="최요한 목사(행정, 청년부)"
+              src="pastor_yh.jpg"
+              style="border-radius: 8px;"
+            />
+            <div
+              style="color: rgb(53, 53, 53); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: 15px;"
+            >
+              최요한 목사(행정, 청년부)
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-md-6 emotion-1"
+        >
+          <div
+            style="display: flex; flex-direction: column;"
+          >
+            <img
+              alt="유지영 목사(유아, 유치부)"
+              src="pastor_jy.jpg"
+              style="border-radius: 8px;"
+            />
+            <div
+              style="color: rgb(53, 53, 53); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: 15px;"
+            >
+              유지영 목사(유아, 유치부)
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-md-6 emotion-1"
+        >
+          <div
+            style="display: flex; flex-direction: column;"
+          >
+            <img
+              alt="김회민 목사(중,고등부)"
+              src="pastor_placeholder.svg"
+              style="border-radius: 8px;"
+            />
+            <div
+              style="color: rgb(53, 53, 53); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: 15px;"
+            >
+              김회민 목사(중,고등부)
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-md-6 emotion-1"
+        >
+          <div
+            style="display: flex; flex-direction: column;"
+          >
+            <img
+              alt="유민아 전도사(아동부)"
+              src="pastor_placeholder.svg"
+              style="border-radius: 8px;"
+            />
+            <div
+              style="color: rgb(53, 53, 53); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: 15px;"
+            >
+              유민아 전도사(아동부)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

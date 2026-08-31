@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import pastor_yh from "../images/pastor_yh.jpg";
 import pastor_jy from "../images/pastor_jy.jpg";
 import pastorPlaceholder from "../images/pastor_placeholder.svg";
@@ -20,7 +20,7 @@ const Pastors = () => {
 
   const getCards = (ps) => {
     return ps.map((p) => (
-      <Grid xs={12} md={6} key={p.name}>
+      <Grid size={{ xs: 12, md: 6 }} key={p.name}>
         <div style={FlexColumn}>
           <img src={p.img} alt={p.name} style={{ borderRadius: "8px" }} />
           <div

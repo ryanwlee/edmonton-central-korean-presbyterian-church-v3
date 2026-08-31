@@ -1,0 +1,965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot on the home route 1`] = `
+.emotion-0 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: static;
+  --AppBar-background: #1976d2;
+  --AppBar-color: #fff;
+  background-color: var(--AppBar-background);
+  color: var(--AppBar-color);
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:0px) {
+  @media (orientation: landscape) {
+    .emotion-1 {
+      min-height: 48px;
+    }
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    min-height: 64px;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.54);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
+  margin-left: -12px;
+  margin-left: -3px;
+  color: inherit;
+  padding: 5px;
+  font-size: 1.125rem;
+  width: 60px;
+}
+
+.emotion-2::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-2.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-2 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-2:hover {
+  background-color: var(--IconButton-hoverBg);
+}
+
+@media (hover: none) {
+  .emotion-2:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-2.Mui-disabled {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-2.MuiIconButton-loading {
+  color: transparent;
+}
+
+@media (min-width:0px) {
+  .emotion-2 {
+    display: block;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-2 {
+    display: none;
+  }
+}
+
+.emotion-3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
+  font-size: 1.5rem;
+}
+
+.emotion-4 {
+  position: fixed;
+  z-index: 1300;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 1200;
+}
+
+.emotion-4 .MuiDrawer-paper {
+  box-sizing: border-box;
+  width: 240px;
+}
+
+.emotion-5 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  z-index: -1;
+}
+
+.emotion-6 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  z-index: 1200;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  outline: 0;
+  right: 0;
+}
+
+.emotion-7 {
+  text-align: center;
+}
+
+.emotion-8 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.emotion-9 {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-bottom-width: thin;
+}
+
+.emotion-10 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.emotion-12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.emotion-12::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-12.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-12 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-12:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-12:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-12.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.emotion-12.Mui-selected.Mui-focusVisible {
+  background-color: rgba(25, 118, 210, 0.2);
+}
+
+.emotion-12.Mui-selected:hover {
+  background-color: rgba(25, 118, 210, 0.12);
+}
+
+@media (hover: none) {
+  .emotion-12.Mui-selected:hover {
+    background-color: rgba(25, 118, 210, 0.08);
+  }
+}
+
+.emotion-12.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-12.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.MuiTypography-root:where(.emotion-13 .MuiListItemText-primary) {
+  display: block;
+}
+
+.MuiTypography-root:where(.emotion-13 .MuiListItemText-secondary) {
+  display: block;
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+
+.c0 {
+  width: 15%;
+  max-width: 198px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: KoPubWorld Dotum Bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.c2 {
+  position: relative;
+  width: 15%;
+  max-width: 198px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: KoPubWorld Dotum Bold;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.c1 {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.c4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 800px;
+  overflow: hidden;
+  transition: max-height 1000ms cubic-bezier(.7,0,.3,1);
+  opacity: 1;
+  transition-property: max-height,opacity;
+  transition-duration: 1000ms;
+}
+
+.c5 {
+  position: absolute;
+  left: 80px;
+}
+
+@media (max-width: 900px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .c5 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic emotion-0"
+        style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular emotion-1"
+        >
+          <a
+            data-discover="true"
+            href="/"
+          >
+            <img
+              alt="Logo"
+              src="logo.png"
+              style="max-width: 344px; height: 40px;"
+            />
+          </a>
+          <div
+            style="display: flex; flex-direction: row; flex-grow: 1; justify-content: flex-end;"
+          >
+            <a
+              class="c0"
+              data-discover="true"
+              href="/intro"
+            >
+              소개
+            </a>
+            <div
+              class="c1"
+            />
+            <div
+              class="c2"
+            >
+              <div
+                class="c3"
+              >
+                예배
+              </div>
+            </div>
+            <div
+              class="c1"
+            />
+            <a
+              class="c0"
+              data-discover="true"
+              href="/education"
+            >
+              교육부
+            </a>
+            <div
+              class="c1"
+            />
+            <a
+              class="c0"
+              data-discover="true"
+              href="/serving"
+            >
+              사역과 섬김
+            </a>
+            <div
+              class="c1"
+            />
+            <a
+              class="c0"
+              data-discover="true"
+              href="/jubo"
+            >
+              주보
+            </a>
+            <div
+              class="c1"
+            />
+            <a
+              class="c0"
+              data-discover="true"
+              href="/reserve"
+            >
+              시설 예약
+            </a>
+            <button
+              aria-label="menu"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeSmall emotion-2"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-3"
+                data-testid="MenuIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav />
+      <div
+        class="c4"
+        transitiontime="1000"
+      >
+        <img
+          alt="Hero"
+          src="hero.png"
+          style="width: 100%; height: auto; display: block;"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            style="display: flex; flex-direction: row;"
+          >
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+            >
+              주일 예배
+            </div>
+            <div
+              style="margin-left: 15px;"
+            >
+              <div
+                style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+              >
+                1부 | 오전 9:00
+              </div>
+              <div
+                style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+              >
+                2부 | 오전 11:00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        home page
+      </div>
+      <div
+        style="display: flex; flex-direction: column; background-color: rgb(36, 36, 36); height: 450px; width: 100%; align-items: center; justify-content: center;"
+      >
+        <div
+          style="margin-left: auto; margin-right: auto; margin-bottom: 40px;"
+        >
+          <img
+            alt="Logo"
+            src="logo.png"
+            style="width: auto; height: 40px;"
+          />
+        </div>
+        <div
+          style="color: rgb(93, 182, 131); font-size: 22px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-bottom: 10px;"
+        >
+          CONTACT
+        </div>
+        <div
+          style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px;"
+        >
+          <img
+            alt="Pin"
+            src="footerPin.png"
+            style="width: 15px;"
+          />
+          <div
+            style="color: rgb(255, 255, 255); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center;"
+          >
+            2551 Ellwood Dr SW, Edmonton, AB T6X 0P7
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px;"
+        >
+          <img
+            alt="Pin"
+            src="call.png"
+            style="width: 15px;"
+          />
+          <div
+            style="color: rgb(255, 255, 255); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center;"
+          >
+            +1 (780)437-6229
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px;"
+        >
+          <img
+            alt="Pin"
+            src="mail.png"
+            style="width: 15px;"
+          />
+          <div
+            style="color: rgb(255, 255, 255); font-size: 15px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center;"
+          >
+            eckpc1988@gmail.com
+          </div>
+        </div>
+        <div
+          style="margin-top: 30px; margin-bottom: 30px; display: flex; gap: 10px;"
+        >
+          <a
+            href="https://www.youtube.com/channel/UCzz-Hi9PzGYiQE0zEOn8idg/live"
+          >
+            <img
+              alt="Youtube"
+              src="youtube.png"
+              style="width: 30px;"
+            />
+          </a>
+          <a
+            href="https://www.grace-central.com/"
+          >
+            <img
+              alt="Gracechurch"
+              src="gracechurch.png"
+              style="width: 30px;"
+            />
+          </a>
+        </div>
+        <div
+          style="color: rgb(255, 255, 255); font-size: 10px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-bottom: 5px;"
+        >
+          © 2023 Edmonton Central Korean Presbyterian Church. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    class="MuiDrawer-root MuiDrawer-anchorRight MuiDrawer-modal MuiModal-root MuiModal-hidden emotion-4"
+    role="presentation"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root MuiModal-backdrop emotion-5"
+      style="opacity: 0; visibility: hidden;"
+    />
+    <div
+      data-testid="sentinelStart"
+      tabindex="-1"
+    />
+    <div
+      aria-modal="true"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper emotion-6"
+      data-mui-focusable=""
+      role="dialog"
+      style="--Paper-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12); visibility: hidden; transform: translateX(0px);"
+      tabindex="-1"
+    >
+      <div
+        class="MuiBox-root emotion-7"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 emotion-8"
+        >
+          메뉴
+        </h6>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth emotion-9"
+        />
+        <ul
+          class="MuiList-root MuiList-padding emotion-10"
+        >
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/intro"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  소개
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/service"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  예배
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/education"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  교육부
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/serving"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  사역과 섬김
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/jubo"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  주보
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              data-discover="true"
+              href="/reserve"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  시설 예약
+                </span>
+              </div>
+            </a>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters emotion-11"
+          >
+            <a
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters emotion-12"
+              href="https://open.spotify.com/show/2Lkolq2OcdFktuWOxbY20d?si=YHcjVU_4QhmF9JKjB1XYyg"
+              rel="noopener noreferrer"
+              tabindex="0"
+              target="_blank"
+            >
+              <div
+                class="MuiListItemText-root emotion-13"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-14"
+                >
+                  주일설교 오디오
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      data-testid="sentinelEnd"
+      tabindex="-1"
+    />
+  </div>
+</body>
+`;

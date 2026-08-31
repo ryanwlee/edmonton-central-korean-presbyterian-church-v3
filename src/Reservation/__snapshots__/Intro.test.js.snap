@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c0 {
+  width: 100%;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.c3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.c4 {
+  background-color: #5DB683;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: KoPubWorld Dotum Bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.c4:hover {
+  background-color: #4a9268;
+}
+
+.c2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: establishRetrosansOTF;
+  margin-bottom: 30px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c2:hover {
+  text-decoration: underline;
+}
+
+.c1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.c5 {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .c3 {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c4 {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c5 {
+    width: calc(100% - 20px);
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <a
+          class="c2"
+          href="https://calendar.google.com/calendar/appointments/AcZssZ0Am6kRBMFuS41caRLP9ig8aTbL_-Mw8IKNyA4=?gv=true"
+          target="_blank"
+        >
+          시설 예약
+        </a>
+      </div>
+      <div
+        class="c3"
+      >
+        <button
+          class="c4"
+        >
+          본당
+        </button>
+        <button
+          class="c4"
+        >
+          유치부실
+        </button>
+        <button
+          class="c4"
+        >
+          소예배실 (아동부실)
+        </button>
+        <button
+          class="c4"
+        >
+          교육관 1층 (체육관)
+        </button>
+        <button
+          class="c4"
+        >
+          교육관 2층 1 (찬양대실)
+        </button>
+        <button
+          class="c4"
+        >
+          교육관 2층 2 (세미나룸)
+        </button>
+        <button
+          class="c4"
+        >
+          주방
+        </button>
+      </div>
+      <div
+        class="c5"
+      >
+        <iframe
+          frameborder="0"
+          scrolling="no"
+          src="https://calendar.google.com/calendar/embed?src=edmontonccreservation%40gmail.com&ctz=America%2FEdmonton&mode=MONTH&showCalendars=0&showTitle=0"
+          style="border: 0px; width: 100%; height: 100%;"
+          title="calendarView"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

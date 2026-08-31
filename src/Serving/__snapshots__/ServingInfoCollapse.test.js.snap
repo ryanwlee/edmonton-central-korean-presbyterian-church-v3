@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when collapsed 1`] = `
+<body>
+  <div>
+    <div
+      style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+    >
+      <p>
+        duties
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`matches snapshot when expanded 1`] = `
+<body>
+  <div>
+    <div
+      style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 30px; margin-bottom: 30px;"
+    >
+      <p>
+        duties
+      </p>
+    </div>
+  </div>
+</body>
+`;

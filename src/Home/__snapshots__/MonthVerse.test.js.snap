@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c1 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.c0 {
+  position: relative;
+  top: 20px;
+  width: 40px;
+  left: 10%;
+}
+
+.c3 {
+  text-align: center;
+}
+
+.c2 {
+  background-color: #F5F6F6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  .c1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+<body>
+  <div>
+    <div>
+      <img
+        alt="DoubleQuote"
+        class="c0"
+        src="doublequote.png"
+      />
+      <div
+        class="c1 c2"
+      >
+        <div
+          class="c3"
+        >
+          <div>
+            <div
+              style="color: rgb(53, 53, 53); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; line-height: 35px;"
+            >
+              8월 요절 말씀
+            </div>
+            <div
+              style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: center; line-height: 20px; margin-top: 30px; max-width: 600px;"
+            >
+              우리를 거스르고 불리하게 하는 법조문으로 쓴 증서를 지우시고 제하여 버리사 십자가에 못 박으시고 통치자들과 권세들을 무력화하여 드러내어 구경거리로 삼으시고 십자가로 그들을 이기셨느니라
+            </div>
+            <div
+              style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: center; line-height: 20px; margin-top: 30px;"
+            >
+              골 2:14-15
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

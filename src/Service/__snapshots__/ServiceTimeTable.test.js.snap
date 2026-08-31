@@ -1,0 +1,647 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 10em 58px 9em 9.5em;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  min-height: 64px;
+  padding: 6px 14px;
+}
+
+.c7 {
+  display: grid;
+  grid-template-columns: 10em 58px 9em 9.5em;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  min-height: 42px;
+  padding: 2px 14px;
+}
+
+.c2 {
+  padding-left: 4px;
+  color: #5db683;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.c3 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #ff4646;
+  background: #ffffff;
+  border: 2px solid #ff4646;
+  box-sizing: border-box;
+}
+
+.c8 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #198507;
+  background: #ffffff;
+  border: 2px solid #198507;
+  box-sizing: border-box;
+}
+
+.c10 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #7c28d7;
+  background: #ffffff;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background: linear-gradient(#fff, #fff) padding-box,linear-gradient(180deg, #fcb106 0%, #9341b0 50%, #6712fa 100%) border-box;
+}
+
+.c11 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 10px;
+  line-height: 1.15;
+  color: #9e9e9e;
+  background: #ffffff;
+  border: 2px solid #9e9e9e;
+  box-sizing: border-box;
+}
+
+.c4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.c9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.c5 {
+  display: none;
+}
+
+.c6 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    grid-template-areas: "name badge" "slots slots";
+    justify-content: stretch;
+    border-radius: 20px;
+    row-gap: 4px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c7 {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    grid-template-areas: "name badge" "slots slots";
+    justify-content: stretch;
+    border-radius: 20px;
+    row-gap: 4px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c2 {
+    grid-area: name;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .c3 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c8 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c10 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c11 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .c9 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .c5 {
+    display: flex;
+    flex-direction: column;
+    grid-area: slots;
+    gap: 4px;
+    width: 100%;
+  }
+}
+
+<body>
+  <div>
+    <div
+      aria-label="예배 시간 안내"
+      class="c0"
+      role="table"
+    >
+      <div
+        class="c1"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          주일 예배
+        </div>
+        <span
+          class="c3"
+          role="cell"
+        >
+          주일
+        </span>
+        <div
+          class="c4"
+          role="cell"
+        >
+          <span>
+            오전 9시
+          </span>
+          <span>
+            오전 11시
+          </span>
+        </div>
+        <div
+          class="c4"
+          role="cell"
+        >
+          <span>
+            본당
+          </span>
+          <span>
+            본당 (온라인)
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오전 9시
+            </span>
+            <span>
+              본당
+            </span>
+          </div>
+          <div
+            class="c6"
+          >
+            <span>
+              오전 11시
+            </span>
+            <span>
+              본당 (온라인)
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          수요 예배
+        </div>
+        <span
+          class="c8"
+          role="cell"
+        >
+          수
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오후 7시 30분
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            본당
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오후 7시 30분
+            </span>
+            <span>
+              본당
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          새벽기도
+        </div>
+        <span
+          class="c10"
+          role="cell"
+        >
+          화-토
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오전 6시
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            본당
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오전 6시
+            </span>
+            <span>
+              본당
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          영 · 유아 · 유치부
+        </div>
+        <span
+          class="c3"
+          role="cell"
+        >
+          주일
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오전 11시
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            영유아, 유치부실
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오전 11시
+            </span>
+            <span>
+              영유아, 유치부실
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          아동부
+        </div>
+        <span
+          class="c3"
+          role="cell"
+        >
+          주일
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오전 11시
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            아동부실
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오전 11시
+            </span>
+            <span>
+              아동부실
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          중 · 고등부
+        </div>
+        <span
+          class="c3"
+          role="cell"
+        >
+          주일
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오전 11시
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            교육관
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오전 11시
+            </span>
+            <span>
+              교육관
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          청년부 예배
+        </div>
+        <span
+          class="c3"
+          role="cell"
+        >
+          주일
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            오후 1시 30분
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            본당
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              오후 1시 30분
+            </span>
+            <span>
+              본당
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+        role="row"
+      >
+        <div
+          class="c2"
+          role="cell"
+        >
+          다락방 모임
+        </div>
+        <span
+          class="c11"
+          role="cell"
+        >
+          <span>
+            매월
+          </span>
+          <span>
+            1회
+          </span>
+        </span>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            다락방 별 상이
+          </span>
+        </div>
+        <div
+          class="c9"
+          role="cell"
+        >
+          <span>
+            다락방 별 상이
+          </span>
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <span>
+              다락방 별 상이
+            </span>
+            <span>
+              다락방 별 상이
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

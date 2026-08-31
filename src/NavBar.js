@@ -134,20 +134,22 @@ function NavBar({ handleDrawerToggle }) {
               anchorPosition={anchorPosition}
               open={open}
               onClose={handleMenuClose}
-              MenuListProps={{
-                onMouseLeave: handleMenuClose,
-                sx: {
-                  backgroundColor: "#353535",
-                  padding: 0,
+              slotProps={{
+                list: {
+                  onMouseLeave: handleMenuClose,
+                  disablePadding: true,
+                  sx: {
+                    backgroundColor: "#353535",
+                  },
                 },
-              }}
-              PaperProps={{
-                sx: {
-                  backgroundColor: "#353535",
-                  borderRadius: 0,
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
-                  minWidth: menuRef.current?.offsetWidth || "auto",
-                  marginTop: 0,
+                paper: {
+                  sx: {
+                    backgroundColor: "#353535",
+                    borderRadius: 0,
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+                    minWidth: menuRef.current?.offsetWidth || "auto",
+                    marginTop: 0,
+                  },
                 },
               }}
               anchorOrigin={{

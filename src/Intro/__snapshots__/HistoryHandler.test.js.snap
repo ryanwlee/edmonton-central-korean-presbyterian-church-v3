@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when collapsed 1`] = `
+<body>
+  <div>
+    <div
+      style="display: flex; flex-direction: column;"
+    >
+      <div
+        style="display: flex; flex-direction: row; margin-bottom: 20px;"
+      >
+        <img
+          src="ArrowDown.png"
+          style="width: 10px; height: 8px; margin-top: auto; margin-bottom: auto; margin-right: 5px; cursor: pointer; transform: rotate(180deg); transition: .2s ease-in-out;"
+        />
+        <div
+          style="color: rgb(93, 182, 131); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; cursor: pointer;"
+        >
+          1980
+           년대
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`matches snapshot when expanded 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 0px;
+}
+
+.c1 {
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 10;
+}
+
+.c2 {
+  position: absolute;
+  left: calc(80% - 8px);
+  top: calc(50% - 8px);
+  z-index: 20;
+  cursor: pointer;
+}
+
+.c3 {
+  position: absolute;
+  left: calc(90% - 8px);
+  top: calc(50% - 8px);
+  z-index: 20;
+  cursor: pointer;
+}
+
+.c4 {
+  position: absolute;
+  height: 30px;
+  top: calc(50% - 15px);
+  left: calc(80% - 40px);
+  background-color: #5DB683;
+  border-radius: 20px;
+  border-color: #5DB683;
+  z-index: 20;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .c4 {
+    width: 40px;
+    left: calc(80% - 20px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .c4 {
+    width: 60px;
+    left: calc(80% - 30px);
+  }
+}
+
+@media (min-width: 1201px) {
+  .c4 {
+    width: 80px;
+    left: calc(80% - 40px);
+  }
+}
+
+<body>
+  <div>
+    <div
+      style="display: flex; flex-direction: column;"
+    >
+      <div
+        style="display: flex; flex-direction: row; margin-bottom: 20px;"
+      >
+        <img
+          src="ArrowDown.png"
+          style="width: 10px; height: 8px; margin-top: auto; margin-bottom: auto; margin-right: 5px; cursor: pointer; transform: rotate(0deg); transition: .2s ease-in-out;"
+        />
+        <div
+          style="color: rgb(93, 182, 131); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; cursor: pointer;"
+        >
+          1980
+           년대
+        </div>
+      </div>
+      <div
+        class="c0"
+        height="0"
+      >
+        <img
+          alt="Timeline"
+          class="c1"
+          src="Timeline.png"
+        />
+        <img
+          alt="Ellipse"
+          class="c2"
+          containerheight="0"
+          percent="80"
+          src="Ellipse.png"
+        />
+        <img
+          alt="Ellipse"
+          class="c3"
+          containerheight="0"
+          percent="90"
+          src="Ellipse.png"
+        />
+        <div
+          class="c4"
+          containerheight="0"
+          percent="80"
+        >
+          1988
+        </div>
+      </div>
+      <div>
+        <div
+          style="display: flex; flex-direction: row; background-color: rgb(245, 246, 246); padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            9.18
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              김경화, 김용준, 정명환, 허원태 장로외 57명의 성인성도와 35명의 주일학교 학생이 첫 예배를 드림 (장소: Holy Trinity Anglican Church, 10087-87 Ave)
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; background-color: white; padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            9.18
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              교인 총회에서 본 교회는 미주한인 장로회 카나다 노회에 가입할 것과 교회 명칭을 '에드몬톤 한인 중앙 장로교회(가칭)'로 할 것을 결의
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; background-color: rgb(245, 246, 246); padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            9.25
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              미주 한인 장로회 카나다 노회는 본 교회의 노회 가입을 승인하고 임시 당회장에 김재광 목사(토론토 영락교회 시무)를 임명
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; background-color: white; padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            10.7-9
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              교회 창립기념 특별집회 (강사: 김재광 목사)
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; background-color: rgb(245, 246, 246); padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            10.9
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              공동의회로 모이고 김명준 목사를 본 교회 위임목사로 청빙할것과, 본 교회 명칭을 '미주한인 장로회 에드몬톤 한인 중앙 장로교회' (The Edmonton Central Korean Presbyterian Church, The Presbyterian Church in America)로 하기로 결의
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: flex; flex-direction: row; background-color: white; padding: 25px 20px 25px 20px; gap: 60px;"
+        >
+          <div
+            style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-bottom: auto;"
+          >
+            10.23
+          </div>
+          <div
+            style="display: flex; flex-direction: column; color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Light; text-align: left; line-height: 20px;"
+          >
+            <div>
+              <img
+                src="Rectangle.png"
+                style="width: 5px; height: 5px; margin-right: 6px; margin-bottom: 3px;"
+              />
+              본 교회 예배 장소를 9915-148 Street에 위치한 St Andrews United Church로 옮기다
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

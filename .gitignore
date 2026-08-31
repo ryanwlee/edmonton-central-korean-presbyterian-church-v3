@@ -1,5 +1,11 @@
 node_modules
-package-lock.json
+# package-lock.json is intentionally tracked: react-scripts 5.0.1 declares loose
+# semver ranges, and without a lockfile every install re-resolves the tree and
+# has already drifted into versions that do not build.
 yarn.lock
 build
 build/**/*
+test-results
+playwright-report
+blob-report
+.playwright

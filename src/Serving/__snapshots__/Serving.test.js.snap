@@ -1,0 +1,1689 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.emotion-0 {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-bottom-width: thin;
+}
+
+.emotion-1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
+  font-size: 1.5rem;
+}
+
+.c0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c1 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.c2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: establishRetrosansOTF;
+  margin-bottom: 40px;
+}
+
+.c3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+  max-width: 1000px;
+}
+
+.c4 {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  transition: background-color 0.3s ease,color 0.3s ease;
+  cursor: pointer;
+}
+
+.c5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.c6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c7 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.c8 {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.c9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  flex-direction: row;
+  gap: 7px;
+  word-break: break-word;
+  text-align: left;
+}
+
+.c11 {
+  padding-left: 27px;
+  text-align: left;
+}
+
+.c10 {
+  width: 19px;
+  height: auto;
+}
+
+@media (max-width: 1280px) {
+  .c1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c3 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          제직회 각 위원회
+        </div>
+        <div
+          class="c3"
+        >
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              예배 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  예배 준비
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  정기집회(주일, 수요일, 새벽, 절기)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  예배 장소
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  안내(예배부는 본당 안에서), 헌금위원 준비
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  강단 장식
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  음향, 영상제작 및 촬영
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no5.png"
+                  />
+                  찬양팀
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              선교 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  국외선교
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  세네갈 00교회, K국 00교회, 이경환(몽골), 전하라(1국), 강경찬(브라질), 서동아(N국), 오필재(일본)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  국내선교(개척교회)
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  밴쿠버 리디머교회(장기환목사), 배틀포드 교회(이기준목사), Love Corps(원주민)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  해외(미자립교회 지원)
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  한국 현리교회(최상헌목사) 무안 구남교회(고한호목사), 박현아목사(외국인 노동자 사역, 한국)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  Mission Trip
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  선교사 파송지역, 원주민, 카자흐스탄(9월), 세네갈(11월), 협력선교지에서 선교팀 요청시 협의 후 결정
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no5.png"
+                  />
+                  세네갈 학생 돕기
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              봉사 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  간식
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  커피 및 음료 / 간식비 후원
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  식사
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  매달 1회
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  특별절기 만찬
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  부활절, 창립주일, 추수감사절, 성탄절 등
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  정리봉사
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no5.png"
+                  />
+                  주방 관리 및 운영
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no6.png"
+                  />
+                  야유회
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  장소 및 식사준비, 6월 말
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              새가족 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  새가족부
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  교역자가 교육 * 정착지원, 새가족반, 환영회, 사진 촬영
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  전도 및 심방 지원
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              양육 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  성경통독 및 각종 성경공부, 가정 성경공부
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  제직 세미나(전•후반기)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  전교인 성경 퀴즈대회
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  전교인 찬양대회
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              관리 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  사무관리(사무용품 구입), 비품관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  차량관리, 주차관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  시설관리(교회 본건물, 교육관 내부-사용부서 뒷정리 / 외부시설-주차장, 조경)
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              교육 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  유아부
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  미취학 아동 신앙지도 및 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  아동부
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  Gr. 1∼6 학생들의 신앙지도 및 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  중・고등부
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  Gr. 7∼12 학생들의 신앙지도 및 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  청년부
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  청년・대학생의 신앙지도 및 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no5.png"
+                  />
+                  매월 1회 행사진행을 논의
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no6.png"
+                  />
+                  한글학교
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  K-Gr. 12 학생들의 한글 교육
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no7.png"
+                  />
+                  8월 졸업예배
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              재정 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  헌금 수입 및 지출 기록(재정 위원장, 재정부장, 안수집사·권사)
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  재정 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  헌금봉투 구매
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              기획 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  기획
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  전교인 부흥회 및 세미나, 체육대회, 선교사 파송
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  인사관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no3.png"
+                  />
+                  구제, 장학기금 모금
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no4.png"
+                  />
+                  성례식 준비
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  시무권사
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no5.png"
+                  />
+                  부동산 관리
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  개보수, 증축
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no6.png"
+                  />
+                  홍보 편찬
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  요람, 홈페이지 관리
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no7.png"
+                  />
+                  교회 내규수정
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no8.png"
+                  />
+                  요한선교회 나들이
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no9.png"
+                  />
+                  교육관 운영 수칙
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no10.png"
+                  />
+                  경조비
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              감사 위원회
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  재정감사
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  재정: 최경보 장로, 신원호 집사, 김태양 집사
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              찬양대
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="AddIcon"
+                focusable="false"
+                style="color: rgb(93, 182, 131); cursor: pointer; display: block;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-1"
+                data-testid="RemoveIcon"
+                focusable="false"
+                style="color: rgb(255, 255, 255); cursor: pointer; display: none;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13H5v-2h14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            style="height: 0px; overflow: hidden; transition: height 0.5s ease, padding 0.5s ease; display: flex; flex-direction: column; gap: 15px; padding-left: 30px; padding-right: 30px; margin-top: 0px; margin-bottom: 0px;"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no1.png"
+                  />
+                  찬양대(할렐루야)
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  찬양대 연습: 주일 예배, 절기 예배 찬양대 훈련: 세미나
+                </div>
+              </div>
+            </div>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <div
+                  class="c9"
+                >
+                  <img
+                    class="c10"
+                    src="no2.png"
+                  />
+                  연합 집회
+                </div>
+              </div>
+              <div
+                class="c8"
+              >
+                <div
+                  class="c11"
+                >
+                  에드먼턴 연합모임(부활절, 성탄축하 등)
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth emotion-0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

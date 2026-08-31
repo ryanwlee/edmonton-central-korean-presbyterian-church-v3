@@ -1,0 +1,1180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c1 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.c5 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 10em 58px 9em 9.5em;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  min-height: 64px;
+  padding: 6px 14px;
+}
+
+.c12 {
+  display: grid;
+  grid-template-columns: 10em 58px 9em 9.5em;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  min-height: 42px;
+  padding: 2px 14px;
+}
+
+.c7 {
+  padding-left: 4px;
+  color: #5db683;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.c8 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #ff4646;
+  background: #ffffff;
+  border: 2px solid #ff4646;
+  box-sizing: border-box;
+}
+
+.c13 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #198507;
+  background: #ffffff;
+  border: 2px solid #198507;
+  box-sizing: border-box;
+}
+
+.c15 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  color: #7c28d7;
+  background: #ffffff;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background: linear-gradient(#fff, #fff) padding-box,linear-gradient(180deg, #fcb106 0%, #9341b0 50%, #6712fa 100%) border-box;
+}
+
+.c16 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "KoPubWorld Dotum Bold",sans-serif;
+  font-size: 10px;
+  line-height: 1.15;
+  color: #9e9e9e;
+  background: #ffffff;
+  border: 2px solid #9e9e9e;
+  box-sizing: border-box;
+}
+
+.c9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.c14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.c10 {
+  display: none;
+}
+
+.c11 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #353535;
+  font-family: "KoPubWorld Dotum Medium",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.c2 {
+  margin-bottom: 20px;
+}
+
+.c3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c4 {
+  width: 100%;
+  max-width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c17 {
+  width: 100%;
+  max-width: 45%;
+  height: auto;
+  object-fit: contain;
+}
+
+.c21 {
+  width: 50%;
+  padding: 10px;
+}
+
+.c24 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c25 {
+  color: rgb(53, 53, 53, 0.6);
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.c26 {
+  font-weight: 800;
+  display: contents;
+}
+
+.c27 {
+  color: #D10606;
+  display: contents;
+}
+
+.c18 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.c19 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #353535;
+  fontSize: 18px;
+  fontWeight: 300;
+  fontFamily: KoPubWorld Dotum Medium;
+  gap: 0;
+}
+
+.c20 {
+  color: #5DB683;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.c23 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Medium;
+}
+
+.c22 {
+  color: #353535;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Bold;
+  text-align: center;
+  background-color: #353535;
+  border-radius: 40px;
+  color: #FFFFFF;
+  width: 60px;
+  padding-top: 3px;
+  padding-left: 8px;
+  padding-bottom: 3px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1280px) {
+  .c1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c6 {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    grid-template-areas: "name badge" "slots slots";
+    justify-content: stretch;
+    border-radius: 20px;
+    row-gap: 4px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c12 {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    grid-template-areas: "name badge" "slots slots";
+    justify-content: stretch;
+    border-radius: 20px;
+    row-gap: 4px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c7 {
+    grid-area: name;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .c8 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c13 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c15 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c16 {
+    grid-area: badge;
+    width: 58px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c9 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .c14 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .c10 {
+    display: flex;
+    flex-direction: column;
+    grid-area: slots;
+    gap: 4px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c3 {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c4 {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c17 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c18 {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c19 {
+    width: 100%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c20 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c23 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c22 {
+    display: none;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          style="margin-bottom: 80px;"
+        >
+          <div
+            style="color: rgb(0, 0, 0); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; margin-bottom: 40px;"
+          >
+            예배 안내
+          </div>
+          <div
+            class="c2"
+          >
+            • 주일예배는 온 가족이 한 자리에 모여서 진실되게 하나님을 예배합니다.
+          </div>
+          <div
+            class="c2"
+          >
+            <div>
+              • 교회 사무실 열려있는 시간
+            </div>
+            <div
+              style="font-weight: 800; margin-left: 12px;"
+            >
+              화, 수, 목, 금 오전 9:30 ~ 오후 4:00
+            </div>
+          </div>
+          <div
+            class="c2"
+          >
+            • 교역자의 도움이 필요한 경우 언제든지 연락주시기 바랍니다.
+          </div>
+          <div
+            class="c2"
+          >
+            • 헌금은 소지하고 있는 헌금 봉투에 담아 정성껏 하나님께 봉헌합니다.
+          </div>
+          <div
+            class="c2"
+          >
+            • 어려운 시기를 잘 극복하고 이길 수 있도록 깨어 기도에 힘쓰시기 바랍니다.
+          </div>
+          <div
+            class="c2"
+          >
+            <div>
+              • 온라인 예배: 교회 유튜브 채널에서 보실 수 있습니다.
+            </div>
+            <div
+              style="font-weight: 800; margin-left: 12px;"
+            >
+              <a
+                href="https://www.youtube.com/channel/UCzz-Hi9PzGYiQE0zEOn8idg/live"
+              >
+                라이브 방송 보기
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            <div
+              aria-label="예배 시간 안내"
+              class="c5"
+              role="table"
+            >
+              <div
+                class="c6"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  주일 예배
+                </div>
+                <span
+                  class="c8"
+                  role="cell"
+                >
+                  주일
+                </span>
+                <div
+                  class="c9"
+                  role="cell"
+                >
+                  <span>
+                    오전 9시
+                  </span>
+                  <span>
+                    오전 11시
+                  </span>
+                </div>
+                <div
+                  class="c9"
+                  role="cell"
+                >
+                  <span>
+                    본당
+                  </span>
+                  <span>
+                    본당 (온라인)
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 9시
+                    </span>
+                    <span>
+                      본당
+                    </span>
+                  </div>
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 11시
+                    </span>
+                    <span>
+                      본당 (온라인)
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  수요 예배
+                </div>
+                <span
+                  class="c13"
+                  role="cell"
+                >
+                  수
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오후 7시 30분
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    본당
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오후 7시 30분
+                    </span>
+                    <span>
+                      본당
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  새벽기도
+                </div>
+                <span
+                  class="c15"
+                  role="cell"
+                >
+                  화-토
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오전 6시
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    본당
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 6시
+                    </span>
+                    <span>
+                      본당
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  영 · 유아 · 유치부
+                </div>
+                <span
+                  class="c8"
+                  role="cell"
+                >
+                  주일
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오전 11시
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    영유아, 유치부실
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 11시
+                    </span>
+                    <span>
+                      영유아, 유치부실
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  아동부
+                </div>
+                <span
+                  class="c8"
+                  role="cell"
+                >
+                  주일
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오전 11시
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    아동부실
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 11시
+                    </span>
+                    <span>
+                      아동부실
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  중 · 고등부
+                </div>
+                <span
+                  class="c8"
+                  role="cell"
+                >
+                  주일
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오전 11시
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    교육관
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오전 11시
+                    </span>
+                    <span>
+                      교육관
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  청년부 예배
+                </div>
+                <span
+                  class="c8"
+                  role="cell"
+                >
+                  주일
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    오후 1시 30분
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    본당
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      오후 1시 30분
+                    </span>
+                    <span>
+                      본당
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c12"
+                role="row"
+              >
+                <div
+                  class="c7"
+                  role="cell"
+                >
+                  다락방 모임
+                </div>
+                <span
+                  class="c16"
+                  role="cell"
+                >
+                  <span>
+                    매월
+                  </span>
+                  <span>
+                    1회
+                  </span>
+                </span>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    다락방 별 상이
+                  </span>
+                </div>
+                <div
+                  class="c14"
+                  role="cell"
+                >
+                  <span>
+                    다락방 별 상이
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <div
+                    class="c11"
+                  >
+                    <span>
+                      다락방 별 상이
+                    </span>
+                    <span>
+                      다락방 별 상이
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="c17"
+            src="churchMap.png"
+          />
+        </div>
+      </div>
+      <div
+        class="c1"
+      >
+        <div
+          style="color: rgb(0, 0, 0); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; margin-bottom: 40px;"
+        >
+          헌금 안내
+        </div>
+        <div
+          class="c18"
+        >
+          <div
+            class="c19"
+          >
+            <div
+              class="c20"
+            >
+              이메일 헌금(Interac e-Transfer)
+            </div>
+            <div>
+              <div
+                style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Recipient Name 받는 단체 이름
+                </div>
+                <div
+                  class="c21"
+                >
+                  ECKPC
+                </div>
+              </div>
+              <div
+                style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Recipient Email Address 받는 단체의 이메일
+                </div>
+                <div
+                  class="c21"
+                >
+                  eckpc1988jj@gmail.com
+                </div>
+              </div>
+              <div
+                style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Amount 헌금 총액
+                </div>
+                <div
+                  class="c21"
+                >
+                  헌금 총액 기입
+                </div>
+              </div>
+              <div
+                style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Message 메시지
+                </div>
+                <div
+                  class="c21"
+                >
+                  <div>
+                    헌금하시는 분의 영문이름
+                  </div>
+                  <div>
+                    헌금 번호
+                  </div>
+                  <div>
+                    헌금 종류와 액수
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c19"
+          >
+            <div
+              class="c22"
+            >
+              참 고
+            </div>
+            <div
+              class="c23"
+            >
+              <div>
+                <div
+                  class="c24"
+                >
+                  • 모든 메시지를 영문으로 기록해야 됩니다.
+                </div>
+                <div
+                  class="c24"
+                >
+                  한글로 기록할 경우 e-transfer가 되지 않습니다.
+                </div>
+                <div
+                  style="color: rgb(209, 6, 6);"
+                >
+                  구별된 헌금 영문은 헌금 봉투에 적혀 있는 영문을 기록하시면 됩니다.
+                </div>
+                <div
+                  class="c25"
+                >
+                  <div>
+                    예시) 홍길동(헌금봉투 번호 100)의 3월 29일 헌금 십일조 $100, 주일헌금 $20, 감사헌금 $30, 선교헌금 $20
+                  </div>
+                  <div>
+                    Hong Kil Dong, #100, March 29 Offering Tithing $100, Weekly $20, Thanksgiving $30, Mission fund: $20
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c23"
+            >
+              <div
+                class="c24"
+              >
+                • 만약 헌금번호가 없다면 본인의 주소와 전화번호를 기입해 주시기 바랍니다.
+              </div>
+            </div>
+            <div
+              class="c23"
+            >
+              <div>
+                <div
+                  class="c24"
+                >
+                  • 비밀번호(security information)는 질문과 답을 기입하지 않아도 자동 입금이 됩니다.
+                </div>
+                <div
+                  class="c24"
+                >
+                  혹시 비밀번호를 설정하신 분들은 교회 이메일
+                  <div
+                    class="c26"
+                  >
+                     eckpc1988jj@gmail.com
+                  </div>
+                  로 알려주시기 바랍니다.
+                </div>
+              </div>
+            </div>
+            <div
+              class="c23"
+            >
+              <div>
+                <div
+                  class="c24"
+                >
+                  <div
+                    class="c26"
+                  >
+                    • 에드몬톤 중앙교회는 어떤 상황에서도
+                     
+                    <div
+                      class="c27"
+                    >
+                      개별적으로 온라인 헌금을 요구하거나 강요하지 않습니다. 만약 이러한 요청을 개별적으로 이메일이나 전화로 받으신 경우, 중앙교회를 사칭한 사기(fraud)이오니 절대 응하지 마시기 바랍니다.
+                    </div>
+                     
+                    이런 경우 교역자들에게 문의하시기 바랍니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c18"
+          style="margin-top: 100px;"
+        >
+          <div
+            class="c19"
+          >
+            <div
+              class="c20"
+            >
+              개인 수표를 우편으로 보내는 헌금
+            </div>
+            <div>
+              <div
+                style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Pay to
+                </div>
+                <div
+                  class="c21"
+                >
+                  ECKPC
+                </div>
+              </div>
+              <div
+                style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+              >
+                <div
+                  class="c21"
+                >
+                  Address 보내는 곳
+                </div>
+                <div
+                  class="c21"
+                >
+                  2551 Ellwood Dr, SW, Edmonton, AB T6X 0P7
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c19"
+          >
+            <div
+              class="c22"
+            >
+              참 고
+            </div>
+            <div
+              class="c23"
+            >
+              <div
+                class="c24"
+              >
+                • 개인 수표를 기록하여 우편으로 보내시면 됩니다.
+              </div>
+            </div>
+            <div
+              class="c23"
+            >
+              <div
+                class="c24"
+              >
+                • 위와 같은 방법으로 헌금하기 어려운 분은 주중에 사무실에 방문하여 교역자에게 전달 하시거나 교회당에서 다시 예배가 드려질 때 모아둔 헌금을 드리면 됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

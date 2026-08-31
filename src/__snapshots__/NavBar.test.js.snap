@@ -1,0 +1,353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.emotion-0 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: static;
+  --AppBar-background: #1976d2;
+  --AppBar-color: #fff;
+  background-color: var(--AppBar-background);
+  color: var(--AppBar-color);
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:0px) {
+  @media (orientation: landscape) {
+    .emotion-1 {
+      min-height: 48px;
+    }
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    min-height: 64px;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.54);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
+  margin-left: -12px;
+  margin-left: -3px;
+  color: inherit;
+  padding: 5px;
+  font-size: 1.125rem;
+  width: 60px;
+}
+
+.emotion-2::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-2.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-2 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-2:hover {
+  background-color: var(--IconButton-hoverBg);
+}
+
+@media (hover: none) {
+  .emotion-2:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-2.Mui-disabled {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-2.MuiIconButton-loading {
+  color: transparent;
+}
+
+@media (min-width:0px) {
+  .emotion-2 {
+    display: block;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-2 {
+    display: none;
+  }
+}
+
+.emotion-3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
+  font-size: 1.5rem;
+}
+
+.c0 {
+  width: 15%;
+  max-width: 198px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: KoPubWorld Dotum Bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.c2 {
+  position: relative;
+  width: 15%;
+  max-width: 198px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: KoPubWorld Dotum Bold;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.c1 {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 900px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    display: none;
+  }
+}
+
+<body>
+  <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic emotion-0"
+      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular emotion-1"
+      >
+        <a
+          data-discover="true"
+          href="/"
+        >
+          <img
+            alt="Logo"
+            src="logo.png"
+            style="max-width: 344px; height: 40px;"
+          />
+        </a>
+        <div
+          style="display: flex; flex-direction: row; flex-grow: 1; justify-content: flex-end;"
+        >
+          <a
+            class="c0"
+            data-discover="true"
+            href="/intro"
+          >
+            소개
+          </a>
+          <div
+            class="c1"
+          />
+          <div
+            class="c2"
+          >
+            <div
+              class="c3"
+            >
+              예배
+            </div>
+          </div>
+          <div
+            class="c1"
+          />
+          <a
+            class="c0"
+            data-discover="true"
+            href="/education"
+          >
+            교육부
+          </a>
+          <div
+            class="c1"
+          />
+          <a
+            class="c0"
+            data-discover="true"
+            href="/serving"
+          >
+            사역과 섬김
+          </a>
+          <div
+            class="c1"
+          />
+          <a
+            class="c0"
+            data-discover="true"
+            href="/jubo"
+          >
+            주보
+          </a>
+          <div
+            class="c1"
+          />
+          <a
+            class="c0"
+            data-discover="true"
+            href="/reserve"
+          >
+            시설 예약
+          </a>
+          <button
+            aria-label="menu"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeSmall emotion-2"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-3"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+</body>
+`;

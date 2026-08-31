@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c0 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.c4 {
+  width: 50%;
+  padding: 10px;
+}
+
+.c7 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c8 {
+  color: rgb(53, 53, 53, 0.6);
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-weight: 800;
+  display: contents;
+}
+
+.c10 {
+  color: #D10606;
+  display: contents;
+}
+
+.c1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.c2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #353535;
+  fontSize: 18px;
+  fontWeight: 300;
+  fontFamily: KoPubWorld Dotum Medium;
+  gap: 0;
+}
+
+.c3 {
+  color: #5DB683;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.c6 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Medium;
+}
+
+.c5 {
+  color: #353535;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: KoPubWorld Dotum Bold;
+  text-align: center;
+  background-color: #353535;
+  border-radius: 40px;
+  color: #FFFFFF;
+  width: 60px;
+  padding-top: 3px;
+  padding-left: 8px;
+  padding-bottom: 3px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1280px) {
+  .c0 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c0 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c0 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c1 {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c2 {
+    width: 100%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c6 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .c5 {
+    display: none;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        style="color: rgb(0, 0, 0); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; margin-bottom: 40px;"
+      >
+        헌금 안내
+      </div>
+      <div
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            이메일 헌금(Interac e-Transfer)
+          </div>
+          <div>
+            <div
+              style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Recipient Name 받는 단체 이름
+              </div>
+              <div
+                class="c4"
+              >
+                ECKPC
+              </div>
+            </div>
+            <div
+              style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Recipient Email Address 받는 단체의 이메일
+              </div>
+              <div
+                class="c4"
+              >
+                eckpc1988jj@gmail.com
+              </div>
+            </div>
+            <div
+              style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Amount 헌금 총액
+              </div>
+              <div
+                class="c4"
+              >
+                헌금 총액 기입
+              </div>
+            </div>
+            <div
+              style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Message 메시지
+              </div>
+              <div
+                class="c4"
+              >
+                <div>
+                  헌금하시는 분의 영문이름
+                </div>
+                <div>
+                  헌금 번호
+                </div>
+                <div>
+                  헌금 종류와 액수
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c5"
+          >
+            참 고
+          </div>
+          <div
+            class="c6"
+          >
+            <div>
+              <div
+                class="c7"
+              >
+                • 모든 메시지를 영문으로 기록해야 됩니다.
+              </div>
+              <div
+                class="c7"
+              >
+                한글로 기록할 경우 e-transfer가 되지 않습니다.
+              </div>
+              <div
+                style="color: rgb(209, 6, 6);"
+              >
+                구별된 헌금 영문은 헌금 봉투에 적혀 있는 영문을 기록하시면 됩니다.
+              </div>
+              <div
+                class="c8"
+              >
+                <div>
+                  예시) 홍길동(헌금봉투 번호 100)의 3월 29일 헌금 십일조 $100, 주일헌금 $20, 감사헌금 $30, 선교헌금 $20
+                </div>
+                <div>
+                  Hong Kil Dong, #100, March 29 Offering Tithing $100, Weekly $20, Thanksgiving $30, Mission fund: $20
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+            >
+              • 만약 헌금번호가 없다면 본인의 주소와 전화번호를 기입해 주시기 바랍니다.
+            </div>
+          </div>
+          <div
+            class="c6"
+          >
+            <div>
+              <div
+                class="c7"
+              >
+                • 비밀번호(security information)는 질문과 답을 기입하지 않아도 자동 입금이 됩니다.
+              </div>
+              <div
+                class="c7"
+              >
+                혹시 비밀번호를 설정하신 분들은 교회 이메일
+                <div
+                  class="c9"
+                >
+                   eckpc1988jj@gmail.com
+                </div>
+                로 알려주시기 바랍니다.
+              </div>
+            </div>
+          </div>
+          <div
+            class="c6"
+          >
+            <div>
+              <div
+                class="c7"
+              >
+                <div
+                  class="c9"
+                >
+                  • 에드몬톤 중앙교회는 어떤 상황에서도
+                   
+                  <div
+                    class="c10"
+                  >
+                    개별적으로 온라인 헌금을 요구하거나 강요하지 않습니다. 만약 이러한 요청을 개별적으로 이메일이나 전화로 받으신 경우, 중앙교회를 사칭한 사기(fraud)이오니 절대 응하지 마시기 바랍니다.
+                  </div>
+                   
+                  이런 경우 교역자들에게 문의하시기 바랍니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c1"
+        style="margin-top: 100px;"
+      >
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            개인 수표를 우편으로 보내는 헌금
+          </div>
+          <div>
+            <div
+              style="background-color: rgb(245, 246, 246); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Pay to
+              </div>
+              <div
+                class="c4"
+              >
+                ECKPC
+              </div>
+            </div>
+            <div
+              style="background-color: rgb(255, 255, 255); display: flex; flex-direction: row;"
+            >
+              <div
+                class="c4"
+              >
+                Address 보내는 곳
+              </div>
+              <div
+                class="c4"
+              >
+                2551 Ellwood Dr, SW, Edmonton, AB T6X 0P7
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c5"
+          >
+            참 고
+          </div>
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+            >
+              • 개인 수표를 기록하여 우편으로 보내시면 됩니다.
+            </div>
+          </div>
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+            >
+              • 위와 같은 방법으로 헌금하기 어려운 분은 주중에 사무실에 방문하여 교역자에게 전달 하시거나 교회당에서 다시 예배가 드려질 때 모아둔 헌금을 드리면 됩니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

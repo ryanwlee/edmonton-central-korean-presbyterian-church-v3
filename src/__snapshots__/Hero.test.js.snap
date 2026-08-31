@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when hidden 1`] = `
+.c0 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1000ms cubic-bezier(.7,0,.3,1);
+  opacity: 0;
+  transition-property: max-height,opacity;
+  transition-duration: 1000ms;
+}
+
+.c1 {
+  position: absolute;
+  left: 80px;
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+      transitiontime="1000"
+    >
+      <img
+        alt="Hero"
+        src="hero.png"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <div
+        class="c1"
+      >
+        <div
+          style="display: flex; flex-direction: row;"
+        >
+          <div
+            style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+          >
+            주일 예배
+          </div>
+          <div
+            style="margin-left: 15px;"
+          >
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+            >
+              1부 | 오전 9:00
+            </div>
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+            >
+              2부 | 오전 11:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`matches snapshot when visible 1`] = `
+.c0 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 800px;
+  overflow: hidden;
+  transition: max-height 1000ms cubic-bezier(.7,0,.3,1);
+  opacity: 1;
+  transition-property: max-height,opacity;
+  transition-duration: 1000ms;
+}
+
+.c1 {
+  position: absolute;
+  left: 80px;
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+      transitiontime="1000"
+    >
+      <img
+        alt="Hero"
+        src="hero.png"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <div
+        class="c1"
+      >
+        <div
+          style="display: flex; flex-direction: row;"
+        >
+          <div
+            style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+          >
+            주일 예배
+          </div>
+          <div
+            style="margin-left: 15px;"
+          >
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+            >
+              1부 | 오전 9:00
+            </div>
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 10px; font-weight: 600; font-family: KoPubWorld Dotum Bold;"
+            >
+              2부 | 오전 11:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

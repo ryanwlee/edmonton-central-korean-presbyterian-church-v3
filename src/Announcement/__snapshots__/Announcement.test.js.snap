@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c1 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .c1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .c1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          style="color: rgb(0, 0, 0); font-size: 22px; font-weight: 500; font-family: establishRetrosansOTF; margin-bottom: 40px;"
+        >
+          다가오는 행사
+        </div>
+        <div
+          style="display: flex; flex-direction: row;"
+        >
+          <div
+            style="background: url(date.png); background-repeat: no-repeat; display: flex; flex-direction: column; height: 150px; width: 150px; background-size: contain;"
+          >
+            <div
+              style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 800; font-family: KoPubWorld Dotum Bold; text-align: center; margin-top: auto; margin-left: auto; margin-right: auto;"
+            >
+              MAR
+            </div>
+            <div
+              style="color: rgb(255, 255, 255); font-size: 40px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto;"
+            >
+              10
+            </div>
+          </div>
+          <div
+            style="margin-left: 40px;"
+          >
+            <div
+              style="color: rgb(93, 182, 131); font-size: 22px; font-weight: 300; font-family: KoPubWorld Dotum Bold; text-align: left;"
+            >
+              이벤트 타이틀
+            </div>
+            <div
+              style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Medium; margin-bottom: 15px;"
+            >
+              위치 입력
+            </div>
+            <div
+              style="color: rgb(53, 53, 53); font-size: 16px; font-weight: 300; font-family: KoPubWorld Dotum Medium;"
+            >
+              짧은 설명을 입력해주세요.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

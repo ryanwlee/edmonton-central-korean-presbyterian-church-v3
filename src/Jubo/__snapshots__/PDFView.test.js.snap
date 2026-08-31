@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="pdf-worker"
+      data-worker-url="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js"
+    >
+      <div
+        data-default-scale="PageFit"
+        data-file-url="https://example.test/bulletin.pdf"
+        data-testid="pdf-viewer"
+      />
+    </div>
+  </div>
+</body>
+`;
