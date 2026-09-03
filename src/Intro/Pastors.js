@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Unstable_Grid2";
 import pastor_yh from "../images/pastor_yh.jpg";
 import pastor_jy from "../images/pastor_jy.jpg";
 import pastor_hm from "../images/min.jpeg";
@@ -21,9 +21,28 @@ const Pastors = () => {
 
   const getCards = (ps) => {
     return ps.map((p) => (
-      <Grid size={{ xs: 12, md: 6 }} key={p.name}>
-        <div style={FlexColumn}>
-          <img src={p.img} alt={p.name} style={{ borderRadius: "8px" }} />
+      <Grid xs={12} md={6} key={p.name}>
+        <div
+          style={{
+            ...FlexColumn,
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <img
+            src={p.img}
+            alt={p.name}
+            style={{
+              width: "100%",
+              maxWidth: "420px",
+              height: "auto",
+              aspectRatio: "4 / 3",
+              objectFit: "cover",
+              objectPosition: "center top",
+              display: "block",
+              borderRadius: "8px",
+            }}
+          />
           <div
             style={{
               ...ContentBold,
@@ -44,7 +63,7 @@ const Pastors = () => {
       <div style={{ ...Label, textAlign: "center", marginBottom: "50px" }}>
         섬기는 사람들
       </div>
-      <Grid container spacing={8}>
+      <Grid container spacing={8} justifyContent="center">
         {getCards(pastors)}
       </Grid>
     </Container>
